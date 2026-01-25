@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
-    <title>OBFall株式会社</title>
+    <title>株式会社共創 | 地域循環油プロジェクト</title>
     <link rel="icon" href="./image/favicon.png" type="image/png">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 
     <!-- Bootstrap 5 CDN (例) -->
@@ -30,23 +30,20 @@
 
             </ul>
         </nav>
-        <div class="main-visual ">
-            <div class="img-wrap">
-                <img src="image/about_us2.jpg" alt="メイン画像①">
-                <img src="image/achievements.jpg" alt="メイン画像②">
-                <img src="image/recruit.jpg" alt="メイン画像③">
+        <div class="main-visual-wrapper">
+            <div class="main-visual">
+                <div class="img-wrap">
+                    <img src="image/藤が丘小学校児童と.png" alt="藤が丘小学校での活動">
+                    <img src="image/授業風景.jpg" alt="出前授業の様子">
+                    <img src="image/はまみらいみんなフォーラム.png" alt="はまみらいフォーラム">
+                </div>
             </div>
-        </div>
-        <div class="text-container">
-            <p class="fadein-scroll fadein-from-down smaller-text custom-line-height">
-                <strong class="larger-text">XXXXXXXXXX(メインキャッチフレーズ)
-                </strong>
-                <br>
-                XXXXXXXXXXXX（サブキャッチフレーズ）<br>
-
-
-            </p>
-
+            <div class="text-container hero-text-overlay">
+                <div class="fadein-scroll fadein-from-down hero-catchcopy">
+                    <span class="main-text">「油を集める」だけじゃない。</span>
+                    <span class="sub-text">地域の"続く力"を生む、私たちの挑戦と成果。</span>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -63,10 +60,9 @@
                             {{-- 左：画像（トリミングなし） --}}
                             <div class="col-md-6 order-2 order-md-1">
                                 <img
-                                    src="{{ asset('image/service.jpg') }}"
+                                    src="{{ asset('image/藤が丘小学校児童と.png') }}"
                                     alt="企業理念のイメージ画像"
-                                    class="img-fluid rounded shadow-sm d-block"
-                                    style="max-width:100%; height:auto;">
+                                    class="img-fluid rounded shadow-sm d-block section-img">
                             </div>
 
                             {{-- 右：見出し・英字・内容・ボタン --}}
@@ -104,9 +100,9 @@
                                 <h2 class="h4 maintitle text-container mb-3">PROJECTS</h2>
 
                                 <p class="mb-4">
-                                    XXXXXXXXXX(プロジェクトについて3行程度の軽い説明)<br>
-                                    XXXXXXXXXX<br>
-                                    XXXXXXXXXX
+                                    家庭や飲食店から出る廃食油を回収し、<br>
+                                    地域の医療・福祉・教育に還元する循環型プラットフォーム。<br>
+                                    「消費者から循環者へ」私たちの挑戦です。
                                 </p>
                                 <a href="{{ route('userServicesShow') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
                                     プロジェクトの概要 <i class="fa-solid fa-circle-arrow-right ms-1"></i>
@@ -115,10 +111,9 @@
 
                             {{-- 右：画像（トリミングなし） --}}
                             <div class="col-md-6">
-                                <img src="{{ asset('image/service.jpg') }}"
+                                <img src="{{ asset('image/授業風景.jpg') }}"
                                     alt="プロジェクトのイメージ画像"
-                                    class="img-fluid rounded shadow-sm d-block"
-                                    style="max-width:100%;height:auto;">
+                                    class="img-fluid rounded shadow-sm d-block section-img">
                             </div>
                         </div>
                     </div>
@@ -134,10 +129,9 @@
                             {{-- 左：画像（トリミングなし） --}}
                             <div class="col-md-6 order-2 order-md-1">
                                 <img
-                                    src="{{ asset('image/service.jpg') }}"
+                                    src="{{ asset('image/はまみらいみんなフォーラム.png') }}"
                                     alt="実績・事例紹介のイメージ画像"
-                                    class="img-fluid rounded shadow-sm d-block"
-                                    style="max-width:100%; height:auto;">
+                                    class="img-fluid rounded shadow-sm d-block section-img">
                             </div>
 
 
@@ -175,9 +169,9 @@
                                 <h2 class="h4 maintitle text-container mb-3">ABOUT US</h2>
 
                                 <p class="mb-4">
-                                    XXXXXXXXXX(会社概要について３行程度の軽い説明)<br>
-                                    XXXXXXXXXX<br>
-                                    XXXXXXXXXX
+                                    2021年設立、横浜市金沢区を拠点に活動。<br>
+                                    代表・河原英信は国連本部でSDGs報告発表の経歴を持ち、<br>
+                                    「国連Energy Compact」で2030年までのCO₂削減目標を掲げています。
                                 </p>
                                 <a href="{{ route('aboutus') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
                                     会社概要画面へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
@@ -186,10 +180,9 @@
 
                             {{-- 右：画像（トリミングなし） --}}
                             <div class="col-md-6">
-                                <img src="{{ asset('image/about_us1.jpg') }}"
+                                <img src="{{ asset('image/代表.jpg') }}"
                                     alt="会社概要のイメージ画像"
-                                    class="img-fluid rounded shadow-sm d-block"
-                                    style="max-width:100%;height:auto;">
+                                    class="img-fluid rounded shadow-sm d-block section-img">
                             </div>
                         </div>
                     </div>
@@ -285,6 +278,50 @@
                     </div>
                 </section>
             </ul>
+            <h1 class="fadein-scroll fadein-from-left m-0 text-start">
+                <div class="heading-chip">AREA</div>
+            </h1>
+            <ul>
+                <section class="py-1 py-md-5">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12">
+                                <div class="text-muted small mb-1">参加地域</div>
+                                <h2 class="h4 mb-3 text-container maintitle">AREA</h2>
+                                <p class="mb-4">
+                                    地域循環油プロジェクトは、各地域で活動を展開しています。<br>
+                                    お住まいの地域のページから、回収拠点や参加方法をご確認ください。
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-3">
+                                    {{-- 金沢区 --}}
+                                    <div class="col-12 col-md-4">
+                                        <a href="https://kanazawa-ku.chiiki-junkanyu.jp/" target="_blank" rel="noopener noreferrer" class="card h-100 text-decoration-none text-reset shadow-sm">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title mb-2">金沢区</h5>
+                                                <p class="card-text text-muted small">横浜市金沢区で2025年10月スタート。<br>回収拠点：ルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗</p>
+                                                <span class="link-button mt-2 d-inline-block">
+                                                    詳しく見る <i class="fa-solid fa-circle-arrow-right ms-1"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    {{-- 今後追加される地域用のプレースホルダー --}}
+                                    <div class="col-12 col-md-4">
+                                        <div class="card h-100 bg-light border-dashed">
+                                            <div class="card-body text-center d-flex flex-column justify-content-center">
+                                                <h5 class="card-title mb-2 text-muted">Coming Soon...</h5>
+                                                <p class="card-text text-muted small">新しい地域が順次追加されます</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
 
         </div>
 
@@ -315,6 +352,107 @@
         border-radius: var(--radius);
         box-shadow: var(--shadow);
 
+    }
+
+    /* ボタンのホバー */
+    .link-button {
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .link-button:hover {
+        background: #ff8a90;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 162, 168, 0.3);
+    }
+
+    /* 画像のホバー */
+    .img-fluid {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-fluid:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    /* セクション画像の高さ統一 */
+    .section-img {
+        max-height: 300px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* 画像とテキストのラッパー */
+    .main-visual-wrapper {
+        position: relative;
+    }
+
+    /* 画像に暗いフィルターを追加 */
+    .main-visual::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    /* テキストを画像の上に配置 */
+    .hero-text-overlay {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: auto;
+        max-width: 90%;
+        background: transparent;
+    }
+
+    /* キャッチコピーを目立たせる（白文字） */
+    .hero-catchcopy .main-text {
+        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        font-weight: 800;
+        color: #fff;
+        display: block;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-catchcopy .sub-text {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: 600;
+        color: #fff;
+        display: block;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    @media (max-width: 767px) {
+        .hero-text-overlay {
+            bottom: 10%;
+        }
+    }
+
+    /* カードのホバー */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
+    }
+
+    /* ニュース項目のホバー */
+    .news-item {
+        transition: background 0.3s ease;
+    }
+
+    .news-item:hover {
+        background: rgba(255, 162, 168, 0.05);
     }
 
     .human-rights-policy {

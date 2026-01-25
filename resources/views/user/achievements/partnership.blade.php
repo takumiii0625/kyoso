@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>Achievements | OBFall Inc.</title>
+    <title>共創ネットワークの実績 | 株式会社共創</title>
 
     <style>
         /* === 基本設定 === */
@@ -99,13 +99,43 @@
         }
 
         .image-container img {
-            width: 60%;
-            max-width: 720px;
-            border-radius: 6px;
+            width: 100%;
+            max-width: 400px;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        .image-container img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
 
+        /* === 実績アイテムのホバー === */
+        .achievement-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .achievement-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
+            background: rgba(255, 162, 168, 0.03);
+        }
+
+        /* === リンクのホバー === */
+        a.more {
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        a.more:hover {
+            color: #ff7a82;
+            transform: translateX(5px);
+        }
 
         /* === 各セクション区分 === */
         .section-products {
@@ -133,11 +163,6 @@
 
         }
 
-        /* === 実績アイテム === */
-        .achievement-item {
-            margin-bottom: 60px;
-        }
-
         /* === まとめ文 === */
         .summary {
             font-weight: 600;
@@ -162,15 +187,13 @@
             /* テキスト色 */
         }
 
-        /* 白フィルター（上に薄く被せる） */
+        /* 暗いフィルター */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            /* 透明度はお好みで 0.3〜0.6 */
+            background: rgba(0, 0, 0, 0.4);
             pointer-events: none;
-            /* クリック干渉を防ぐ */
         }
 
         /* テキストを最前面に */
@@ -192,14 +215,22 @@
         .hero .title h1 {
             line-height: 1.3;
             margin: 0 0 .5rem;
-            color: #111;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
             font-family: 'Times New Roman', Times, serif;
         }
 
         .hero .sub {
             font-weight: 600;
             letter-spacing: .06em;
-            opacity: .9;
+            color: #fff;
+        }
+
+        .hero .sub-text {
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            background: transparent;
+            padding: 0;
         }
 
         .hero .lead {
@@ -279,28 +310,27 @@
                 position: relative;
                 background-image: var(--hero-img);
                 background-size: cover;
-                /* 画面いっぱいにフィット */
                 background-position: center;
-                /* 中央寄せ */
                 background-repeat: no-repeat;
                 min-height: 46vh;
-                /* お好みで高さ調整 */
-                color: #111;
-                /* テキスト色 */
             }
 
             .hero .title h1 {
                 font-size: 2.000rem;
                 line-height: 1.3;
                 margin: 0 0 .5rem;
-
             }
 
             .hero .sub {
                 font-size: 0.875rem;
                 font-weight: 600;
                 letter-spacing: .06em;
-                opacity: .9;
+            }
+
+            .hero .sub-text {
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+                background: transparent;
+                padding: 0;
             }
 
             .lead {
@@ -391,57 +421,75 @@
         <div class="wrap">
             <div class="title">
                 <h1>共創ネットワークの実績</h1>
-                <div class="sub"><br><br><br><br>XXXXXXXXXXXXX（共創ネットワークの実績のサブタイトル）
-                </div>
+                <div class="sub"><br><br><br><br><span class="sub-text">地域のパートナーとともに、循環の輪を広げています。</span></div>
             </div>
         </div>
     </section>
     <main class="wrap">
         <section aria-label="overview">
             <p>
-                <br>XXXXXXXXXXXXXX（共創ネットワークの実績の説明）
+                行政・企業・学校・NPO・町内会——様々なパートナーと連携し、<br>
+                地域循環油プロジェクトを推進しています。<br><br>
+                それぞれの強みを持ち寄り、「役割分担」と「相互連携」によって、<br>
+                継続できる仕組みを作っています。
             </p>
         </section>
 
 
 
 
-        <!-- 🔒 脆弱性診断 -->
-        <section id="products" class="section-products">
+        <!-- 共創ネットワークの実績 -->
+        <section id="partnership" class="section-products">
+            <!-- はまみらいみんなフォーラム -->
             <article class="achievement-item">
                 <div class="achievement-content">
-                    <!-- image: 脆弱性診断のメイン画面 -->
                     <div class="image-container">
-                        <img src="../image/security.jpg" alt="共創ネットワークの実績の画像" />
+                        <img src="../image/教育③.png" alt="ヨコラボでの発表" />
                     </div>
                     <div class="text">
-
-                        <h4><strong>XXXXXXXXX（共創ネットワークの実績のタイトル）</strong></h4>
+                        <h4><strong>はまみらいみんなフォーラムでの発表</strong></h4>
                         <br>
                         <p>
-                            XXXXXXXXXXXXXXXX（共創ネットワークの実績の説明）
+                            横浜市主催のSDGs推進イベント「はまみらいみんなフォーラム」に参加。<br>
+                            地域循環油プロジェクトの取り組みを発表しました。<br><br>
+                            <strong>【発表内容】</strong><br>
+                            ・プロジェクトの概要と仕組み<br>
+                            ・子どもたちへの教育効果<br>
+                            ・地域パートナーとの連携体制<br><br>
+                            行政・企業・NPOなど、多様なステークホルダーとの<br>
+                            ネットワーク構築の機会となりました。
                         </p>
-                        <p><a href="https://career-log.com/" target="_blank" class="link-button">※リンクなどあれば載せる<i class="bi bi-arrow-right-circle-fill"></i></a></p>
-
                     </div>
                 </div>
             </article>
 
             <hr>
-        </section>
-        <section></section>
-        <section id="origin">
-            <div class="">
-                <div class="origin">
-                    <div class="bar">
 
-
-                        <!-- <p>診断は“終わり”ではなく“成長のはじまり”。<br>
-                            開発を理解するセキュリティチームが、
-                            安心して使い続けられるプロダクトの実現を支えています。</p> -->
+            <!-- 企業・NPO・地域団体との連携 -->
+            <article class="achievement-item">
+                <div class="achievement-content">
+                    <div class="image-container">
+                        <img src="../image/教育④.png" alt="地域パートナーとの連携" />
+                    </div>
+                    <div class="text">
+                        <h4><strong>地域企業・NPO・団体との協働</strong></h4>
+                        <br>
+                        <p>
+                            地域の企業・店舗・NPOと連携し、回収拠点の拡大と活動支援を行っています。<br><br>
+                            <strong>【協力企業・店舗】</strong><br>
+                            ・イエローハット金沢文庫店<br>
+                            ・ウエノクリーニング（金沢区内5店舗）<br>
+                            ・ルンビニー・つながりの庭<br><br>
+                            <strong>【連携NPO・団体】</strong><br>
+                            ・NPO未来経験プロジェクト（子どもの社会体験支援）<br>
+                            ・金沢区自助連絡協議会（地域福祉ネットワーク）<br>
+                            ・ビーバーリンク食廃油活用プロジェクト（資源循環）<br><br>
+                            回収によるポイント還元を通じて、各団体の活動資金を支援しています。
+                        </p>
                     </div>
                 </div>
-            </div>
+            </article>
+            <hr>
         </section>
         <nav aria-label="breadcrumb" class="m-3">
             <ol class="breadcrumb" style="--bs-breadcrumb-divider:'＞'; font-size: clamp(.875rem, 1.8vw, 1rem);">

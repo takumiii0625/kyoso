@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
@@ -31,7 +31,7 @@
         }
 
         .hero {
-            --hero-img: url('../image/achievements.jpg');
+            --hero-img: url('../image/はまみらいみんなフォーラム.png');
 
             position: relative;
             background-image: var(--hero-img);
@@ -46,15 +46,13 @@
             /* テキスト色 */
         }
 
-        /* 白フィルター（上に薄く被せる） */
+        /* 暗いフィルター */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            /* 透明度はお好みで 0.3〜0.6 */
+            background: rgba(0, 0, 0, 0.4);
             pointer-events: none;
-            /* クリック干渉を防ぐ */
         }
 
         /* テキストを最前面に */
@@ -89,7 +87,19 @@
         .hero .sub {
             font-weight: 600;
             letter-spacing: .06em;
-            opacity: .9;
+            color: #fff;
+        }
+
+        .hero .sub-text {
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            background: transparent;
+            padding: 0;
+        }
+
+        .hero .title h1 {
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         .hero .lead {
@@ -165,8 +175,24 @@
             color: #ffa2a8;
             text-decoration: none;
             text-align: end;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
         }
 
+        a.more:hover {
+            color: #ff7a82;
+            transform: translateX(5px);
+        }
+
+        /* カードのホバー */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
+        }
 
         .card-title {
             font-family: 'Times New Roman', Times, serif;
@@ -177,7 +203,7 @@
         /* md=768px 基準 */
         @media (max-width: 767.98px) {
             .hero {
-                --hero-img: url('../image/achievements.jpg');
+                --hero-img: url('../image/はまみらいみんなフォーラム.png');
 
                 position: relative;
                 background-image: var(--hero-img);
@@ -236,8 +262,8 @@
         <div class="wrap">
             <div class="title">
                 <h1>実績・事例紹介</h1>
-                <div class="sub"><br><br><br><br> 「油を集める」だけじゃない。<br>
-                    地域の“続く力”を生む、私たちの挑戦と成果。</div>
+                <div class="sub"><br><br><br><span class="sub-text">「油を集める」だけじゃない。<br>
+                    地域の"続く力"を生む、私たちの挑戦と成果。</span></div>
             </div>
         </div>
     </section>
@@ -245,44 +271,34 @@
         <section aria-label="overview">
             <br>
             <p>
-                XXXXXXX（実績事例紹介についての説明）
+                私たちは金沢区を中心に、廃食油回収を通じた地域循環の仕組みづくりに取り組んでいます。<br>
+                学校での出前授業、地域拠点での回収活動、そして協力店舗・団体との連携——<br>
+                ここでは、これまでの活動成果と、地域に広がる「循環の輪」をご紹介します。
             </p>
         </section>
 
         <section aria-label="service-cards" class="grid">
-            <!-- 回収拠点づくり -->
+            <!-- 回収拠点づくり・資源化 -->
             <article class="card">
-                <div class="kicker">Collection</div>
-                <!-- <div><i class="bi bi-lightbulb-fill"></i>回収拠点づくり</div> -->
-                <h3 class="card-title">回収拠点づくり</h3>
-                <p>地域の生活導線に回収拠点をつくり、参加のハードルを下げる。<br>
+                <div class="kicker">Collection & Recycle</div>
+                <h3 class="card-title">回収拠点づくり・資源化</h3>
+                <p>地域の回収拠点と、集めた油がバイオ燃料になるまで。
                 </p>
-                <a class="more" href="{{ route('achievementsProducts') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
+                <a class="more" href="{{ route('achievementsCollection') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
             </article>
 
-            <!-- 受託開発 -->
+            <!-- 学校・学びの実装 -->
             <article class="card">
                 <div class="kicker">Education</div>
-                <!-- <div><i class="bi bi-lightbulb-fill"></i>受託開発</div> -->
                 <h3 class="card-title">学校・学びの実装</h3>
                 <p>総合の学習や体験を通じて「循環者」を育てる。
                 </p>
-                <a class="more" href="{{ route('achievementsContract') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
+                <a class="more" href="{{ route('achievementsEducation') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
             </article>
 
-            <!-- 脆弱性診断 -->
-            <article class="card">
-                <div class="kicker">Decarbonization</div>
-                <!-- <div><i class="bi bi-lightbulb-fill"></i>脆弱性診断</div> -->
-                <h3 class="card-title">資源化・脱炭素</h3>
-                <p>回収した油を燃料・エネルギーへ。CO₂削減の“見える成果”へ。
-                    <a class="more" href="{{ route('achievementsSecurity') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
-            </article>
-
-            <!-- 受託開発 -->
+            <!-- 共創ネットワーク -->
             <article class="card">
                 <div class="kicker">Partnership</div>
-                <!-- <div><i class="bi bi-lightbulb-fill"></i>受託開発</div> -->
                 <h3 class="card-title">共創ネットワーク</h3>
                 <p>自治体・企業・NPO・町内会と役割分担し、継続できる運用
                 </p>

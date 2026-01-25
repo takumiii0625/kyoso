@@ -27,6 +27,6 @@ class UserServicesController extends Controller
     {
 
 
-        return view('user/services/show');
+        return view('user/projects/show');
     }
 }

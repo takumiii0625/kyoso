@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Bootstrap 5 CDN (例) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <title>Philosophy | OBFall Inc.</title>
+    <title>企業理念 | 株式会社共創</title>
     <style>
         /* ====== Minimal Design Tokens ====== */
         :root {
@@ -77,7 +77,7 @@
 
 
         .hero {
-            --hero-img: url('../image/chou.jpg');
+            --hero-img: url('../image/藤が丘小学校児童と.png');
 
             position: relative;
             background-image: var(--hero-img);
@@ -92,15 +92,13 @@
             /* テキスト色 */
         }
 
-        /* 白フィルター（上に薄く被せる） */
+        /* 暗いフィルター（上に被せる） */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            /* 透明度はお好みで 0.3〜0.6 */
+            background: rgba(0, 0, 0, 0.4);
             pointer-events: none;
-            /* クリック干渉を防ぐ */
         }
 
         /* テキストを最前面に */
@@ -115,12 +113,21 @@
             line-height: 1.3;
             margin: 80px 0 .5rem;
             letter-spacing: 0.08em;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         .hero .sub {
             font-weight: 600;
             letter-spacing: .06em;
-            opacity: .9;
+            color: #fff;
+        }
+
+        .hero .sub-text {
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            background: transparent;
+            padding: 0;
         }
 
         .hero .lead {
@@ -131,7 +138,7 @@
         /* md=768px 基準 */
         @media (max-width: 767.98px) {
             .hero {
-                --hero-img: url('../image/chou.jpg');
+                --hero-img: url('../image/藤が丘小学校児童と.png');
 
                 position: relative;
                 background-image: var(--hero-img);
@@ -188,7 +195,13 @@
             border: 1px solid var(--divider);
             border-radius: var(--radius);
             box-shadow: var(--shadow);
-            padding: 28px
+            padding: 28px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
         }
 
         .muted {
@@ -210,7 +223,13 @@
             padding: 24px;
             border: 1px solid var(--divider);
             border-radius: 14px;
-            background: #fff
+            background: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
         }
 
         .value h4 {
@@ -235,14 +254,26 @@
             border: 1px solid var(--divider);
             border-radius: var(--radius);
             box-shadow: var(--shadow);
-            padding: 36px
+            padding: 36px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .message:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
         }
 
         .origin {
             background: var(--blue-weak);
             border: 1px solid var(--divider);
             border-radius: var(--radius);
-            padding: 28px
+            padding: 28px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .origin:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
         }
 
         .origin .bar {
@@ -299,9 +330,9 @@
             <div class="title">
                 <h1>企業理念</h1>
                 <div class="sub"><br><br>
-                    「捨てるはずだった油」を、子どもたちの未来と地域の力に。<br>
-                    家庭やお店から出る廃食油は、ただの“ごみ”ではありません。<br>
-                    集めて、つないで、循環させれば、地域の挑戦を支える“資源”になります。<br>　</div>
+                    <span class="sub-text">「捨てるはずだった油」を、子どもたちの未来と地域の力に。<br>
+                    家庭やお店から出る廃食油は、ただの"ごみ"ではありません。<br>
+                    集めて、つないで、循環させれば、地域の挑戦を支える"資源"になります。</span></div>
             </div>
         </div>
     </section>
@@ -367,7 +398,7 @@
         <div class="wrap pt-4">
             <div class="message">
                 <div class="kicker">Message（代表メッセージ）</div>
-                <h3 style="margin-top:.2rem">XXXXXXX（Messageタイトル）
+                <h3 style="margin-top:.2rem">「循環者に育とう・育てよう」
                 </h3>
                 <p>
                     地域には、良い活動がたくさんあります。<br>

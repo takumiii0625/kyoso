@@ -35,46 +35,31 @@ Route::get('/newses/{id}', [UserNewsesController::class, 'show'])->name('userNew
 // お知らせ一覧
 Route::get('/newses', [UserNewsesController::class, 'index'])->name('userNewsIndex')->setDefaults(['description' => 'お知らせ一覧']);
 
-// サービス
-Route::get('/service', [UserServicesController::class, 'show'])->name('userServicesShow')->setDefaults(['description' => 'サービス詳細']);
-// 自社開発
-Route::get('/service/products', function () {
-    return view('user/services/products');
-})->name('products');
-// 自社開発実績
-Route::get('/achievements/products', function () {
-    return view('user/achievements/products');
-})->name('achievementsProducts');
+// プロジェクト概要
+Route::get('/projects', [UserServicesController::class, 'show'])->name('userServicesShow')->setDefaults(['description' => 'プロジェクト概要']);
+// 回収拠点づくり
+Route::get('/projects/collection', function () {
+    return view('user/projects/collection');
+})->name('collection');
+// 回収拠点づくり実績
+Route::get('/achievements/collection', function () {
+    return view('user/achievements/collection');
+})->name('achievementsCollection');
 
-// 受託開発
-Route::get('/service/contract', function () {
-    return view('user/services/contract');
-})->name('contract');
-// 受託開発実績
-Route::get('/achievements/contract', function () {
-    return view('user/achievements/contract');
-})->name('achievementsContract');
-
-// SES
-Route::get('/service/ses', function () {
-    return view('user/services/ses');
-})->name('ses');
-
-// 脆弱性診断
-Route::get('/service/security', function () {
-    return view('user/services/security');
-})->name('security');
+// 学校・学びの実装
+Route::get('/projects/education', function () {
+    return view('user/projects/education');
+})->name('education');
+// 学校・学びの実装実績
+Route::get('/achievements/education', function () {
+    return view('user/achievements/education');
+})->name('achievementsEducation');
 
 // 共創ネットワーク
-Route::get('/service/partnership', function () {
-    return view('user/services/partnership');
+Route::get('/projects/partnership', function () {
+    return view('user/projects/partnership');
 })->name('partnership');
 
-
-// 脆弱性診断実績
-Route::get('/achievements/security', function () {
-    return view('user/achievements/security');
-})->name('achievementsSecurity');
 
 // 共創ネットワーク
 Route::get('/achievements/partnership', function () {

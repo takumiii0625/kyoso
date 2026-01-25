@@ -2,8 +2,8 @@
     <div class="wrap">
         <a href="{{ route('indexDev') }}" class="text-dark text-decoration-none ">
             <div class="logo-container">
-                <img src="../image/logo_OBFall.png" class="link" onclick="scrollToTop()" alt="株式会社ロゴ" />
-                <div class="title" onclick="scrollToTop()"></div>
+                <img src="../image/logo.png" class="link" onclick="scrollToTop()" alt="株式会社共創ロゴ" />
+                <div class="title" onclick="scrollToTop()">株式会社共創</div>
             </div>
         </a>
         <nav class="nav-01">

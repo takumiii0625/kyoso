@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
-    <title>OBFall株式会社</title>
+    <title>株式会社共創 | 地域循環油プロジェクト</title>
     <link rel="icon" href="../image/favicon.png" type="image/png">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Bootstrap 5 CDN (例) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
         <div class="wrap">
             <div class="title">
                 <h1 class="">News</h1>
-                <div class="sub"><br><br><br><br>最新情報</div>
+                <div class="sub"><br><br><br><br><span class="sub-text">最新情報</span></div>
             </div>
 
         </div>
@@ -209,15 +209,13 @@
         /* テキスト色 */
     }
 
-    /* 白フィルター（上に薄く被せる） */
+    /* 暗いフィルター */
     .hero::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(255, 255, 255, 0.45);
-        /* 透明度はお好みで 0.3〜0.6 */
+        background: rgba(0, 0, 0, 0.4);
         pointer-events: none;
-        /* クリック干渉を防ぐ */
     }
 
     /* テキストを最前面に */
@@ -231,12 +229,21 @@
     .hero .title h1 {
         line-height: 1.3;
         margin: 0 0 .5rem;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
     }
 
     .hero .sub {
         font-weight: 600;
         letter-spacing: .06em;
-        opacity: .9;
+        color: #fff;
+    }
+
+    .hero .sub-text {
+        color: #fff;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+        background: transparent;
+        padding: 0;
     }
 
     .hero .lead {
@@ -252,14 +259,9 @@
             position: relative;
             background-image: var(--hero-img);
             background-size: cover;
-            /* 画面いっぱいにフィット */
             background-position: center;
-            /* 中央寄せ */
             background-repeat: no-repeat;
             min-height: 46vh;
-            /* お好みで高さ調整 */
-            color: #111;
-            /* テキスト色 */
         }
 
         .hero .wrap {
@@ -278,13 +280,45 @@
             font-size: 0.875rem;
             font-weight: 600;
             letter-spacing: .06em;
-            opacity: .9;
+        }
+
+        .hero .sub-text {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+            background: transparent;
+            padding: 0;
         }
 
         .lead {
             font-size: 0.875rem;
         }
+    }
 
-        /* small 相当 */
+    /* ボタンのホバー */
+    .btn {
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 画像のホバー */
+    .img-fluid {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-fluid:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    /* カードのホバー */
+    .card {
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
     }
 </style>

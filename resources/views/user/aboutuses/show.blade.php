@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
-    <title>OBFall株式会社</title>
+    <title>会社概要 | 株式会社共創</title>
     <link rel="icon" href="../image/favicon.png" type="image/png">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         .hero {
-            --hero-img: url('../image/about_us2.jpg');
+            --hero-img: url('../image/代表.jpg');
 
             position: relative;
             background-image: var(--hero-img);
@@ -37,15 +37,13 @@
             color: #eef6ff
         }
 
-        /* 白フィルター（上に薄く被せる） */
+        /* 暗いフィルター */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            /* 透明度はお好みで 0.3〜0.6 */
+            background: rgba(0, 0, 0, 0.4);
             pointer-events: none;
-            /* クリック干渉を防ぐ */
         }
 
         /* テキストを最前面に */
@@ -73,7 +71,7 @@
         /* md=768px 基準 */
         @media (max-width: 767.98px) {
             .hero {
-                --hero-img: url('../image/about_us2.jpg');
+                --hero-img: url('../image/代表.jpg');
 
                 position: relative;
                 background-image: var(--hero-img);
@@ -105,7 +103,16 @@
                 font-size: 0.875rem;
                 font-weight: 600;
                 letter-spacing: .06em;
-                opacity: .9;
+            }
+
+            .hero .sub-text {
+                text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+                background: rgba(255, 255, 255, 0.5);
+                padding: 4px 12px;
+                border-radius: 6px;
+                display: inline;
+                box-decoration-break: clone;
+                -webkit-box-decoration-break: clone;
             }
 
             .lead {
@@ -119,6 +126,19 @@
             line-height: 1.3;
             margin: 80px 0 .5rem;
             letter-spacing: 0.08em;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero .sub {
+            color: #fff;
+        }
+
+        .hero .sub-text {
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            background: transparent;
+            padding: 0;
         }
 
         h1 {
@@ -157,7 +177,7 @@
         <div class="wrap">
             <div class="title">
                 <h1>会社概要</h1>
-                <div class="sub"><br><br><br><br>私たち株式会社共創について<br>　</div>
+                <div class="sub"><br><br><br><br><span class="sub-text">私たち株式会社共創について</span></div>
             </div>
         </div>
     </section>
@@ -177,14 +197,16 @@
                         </li>
                         <li>
                             <p class="about-head">代表取締役</p>
-                            <p class="about-data">河原　英信</p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-2">
+                                <img src="../image/代表.jpg" alt="代表取締役 河原英信" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                                <p class="about-data mb-0">河原　英信</p>
+                            </div>
                         </li>
                         <li>
                             <p class="about-head">所在地</p>
                             <p class="about-data">
-                                〒XXX-XXXX<br>
-                                XXXXX県XXXXX市XXXX<br>
-                                XXXXXビル XXXF
+                                〒236-0058<br>
+                                神奈川県横浜市金沢区能見台6-25-10
                             </p>
 
                             <!-- 地図（レスポンシブ） -->
@@ -204,22 +226,28 @@
                         </li>
 
                         <li>
-                            <p class="about-head">電話番号</p>
-                            <p class="about-data">XX-XXXX-XXXX<br>
+                            <p class="about-head">メールアドレス</p>
+                            <p class="about-data">kyousou1216@gmail.com<br>
                             </p>
                         </li>
                         <li>
                             <p class="about-head">設立</p>
-                            <p class="about-data">XXXX年XX月XX日<br>
+                            <p class="about-data">2021年12月16日<br>
                             </p>
                         </li>
                         <li>
                             <p class="about-head">資本金</p>
-                            <p class="about-data">XXX,XXX,XXX円</p>
+                            <p class="about-data">1,000,000円</p>
                         </li>
                         <li>
                             <p class="about-head">取引先銀行</p>
-                            <p class="about-data">XXXXX銀行</p>
+                            <p class="about-data">横浜銀行</p>
+                        </li>
+                        <li>
+                            <p class="about-head">商標登録</p>
+                            <p class="about-data">
+                                <img src="{{ asset('image/商標.png') }}" alt="地域循環油プロジェクト商標" class="img-fluid" style="max-width: 200px;">
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -248,5 +276,35 @@
             font-size: 3px;
         }
 
+    }
+
+    /* ボタンのホバー */
+    .btn {
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 会社情報リストのホバー */
+    .about li {
+        transition: background 0.3s ease;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .about li:hover {
+        background: rgba(255, 162, 168, 0.05);
+    }
+
+    /* 画像のホバー */
+    .img-fluid {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-fluid:hover {
+        transform: scale(1.02);
     }
 </style>
