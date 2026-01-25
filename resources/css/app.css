@@ -155,7 +155,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(93, 195, 246, 0.393);
+    background: rgba(255, 255, 255, 0.45);
     /* グレーの半透明色 */
     z-index: 1;
 }
@@ -394,69 +394,129 @@ h1 span {
 }
 
 /* body部↓ */
-
 /* 右端が斜めに“切れる”バッジ（外側へ少し伸ばす版） */
 .heading-chip {
     --nose: 70px;
-    /* 斜めの長さ。大きいほど浅く長く */
     position: relative;
     display: inline-block;
-    /* テキスト幅にフィット */
-    color: #f7f7f9;
+
+    /* 背景が淡いので文字色は濃い目が見やすい（白文字にしたいなら下のcolorを#fffへ） */
+    color: #111;
     line-height: 1.2;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     padding: .45rem calc(1rem + var(--nose)) .45rem 1rem;
-    /* 右にノーズぶん余白 */
 }
 
-/* 背景を1枚で成形（右端を斜めカット） */
+/* 背景（右端を斜めカット） */
 .heading-chip::before {
     content: "";
     position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* 右へ“ノーズ分”はみ出させる */
-    background: #000;
+    z-index: -2;
+    inset: 0;
 
-    /* 右端が斜めになる台形（上：外側、下：内側） */
-    -webkit-clip-path: polygon(0 0, calc(100% - var(--nose)) 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, calc(100% - var(--nose)) 0, 100% 100%, 0 100%);
+    /* ★水彩っぽい「にじみグラデ」 */
+    background:
+        radial-gradient(120px 90px at 18% 65%,
+            rgba(255, 175, 205, .85) 0%,
+            rgba(255, 175, 205, 0) 70%),
+        radial-gradient(170px 120px at 55% 35%,
+            rgba(255, 239, 170, .90) 0%,
+            rgba(255, 239, 170, 0) 72%),
+        radial-gradient(160px 120px at 82% 70%,
+            rgba(255, 205, 150, .55) 0%,
+            rgba(255, 205, 150, 0) 72%),
+        linear-gradient(135deg,
+            rgba(255, 220, 235, .55),
+            rgba(255, 245, 205, .55));
+
+    background-blend-mode: multiply;
+
+    /* ぼかし＋少し彩度UPで水彩っぽさ */
+    filter: blur(3px) saturate(1.02);
+    transform: scale(1.02);
+    /* ぼかしで端が欠けないように少し拡大 */
 }
+
+/* ★紙っぽい粒子（うっすら） */
+.heading-chip::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    /* 擬似ノイズ（軽量版） */
+    background:
+        repeating-radial-gradient(circle at 30% 40%,
+            rgba(0, 0, 0, .10) 0 1px,
+            rgba(0, 0, 0, 0) 1px 4px);
+    opacity: .08;
+    mix-blend-mode: multiply;
+
+}
+
 
 /* ※旧方式の ::after / transform は不要なので削除してください */
 
 /* 左ノーズ（斜めカット）版：ズレなし・一体成形 */
+/* 左ノーズ（斜めカット）版：水彩・対になる配色 */
 .heading-chip--flip {
     --nose: 70px;
-    /* 斜めの出っ張り量（大きいほど斜度が緩く/長く） */
     position: relative;
     display: inline-block;
-    color: #f7f7f9;
+
+    /* 右ノーズと同じく淡い背景なので濃い文字色 */
+    color: #111;
     line-height: 1.2;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
+
     padding: .45rem 1rem .45rem calc(1rem + var(--nose));
-    /* 左に余白 */
 }
 
+/* 背景（左端を斜めカット） */
 .heading-chip--flip::before {
     content: "";
     position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* ノーズぶん左へ広げる */
-    background: #000;
+    z-index: -2;
+    inset: 0;
 
-    /* ← ここがポイント：左上(0 0) → 右上 → 右下 → 左下( var(--nose) 100% ) */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, var(--nose) 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--nose) 100%);
+    /* ★右ノーズ版を左右反転した「にじみグラデ」 */
+    background:
+        radial-gradient(120px 90px at 82% 65%,
+            rgba(255, 175, 205, .85) 0%,
+            rgba(255, 175, 205, 0) 70%),
+        radial-gradient(170px 120px at 45% 35%,
+            rgba(255, 239, 170, .90) 0%,
+            rgba(255, 239, 170, 0) 72%),
+        radial-gradient(160px 120px at 18% 70%,
+            rgba(255, 205, 150, .55) 0%,
+            rgba(255, 205, 150, 0) 72%),
+        /* 角度も反転（135deg → 225deg） */
+        linear-gradient(225deg,
+            rgba(255, 220, 235, .55),
+            rgba(255, 245, 205, .55));
+
+    background-blend-mode: multiply;
+    filter: blur(3px) saturate(1.02);
+    transform: scale(1.02);
+
+}
+
+/* ★紙っぽい粒子（右ノーズ版と同じ） */
+.heading-chip--flip::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    background:
+        repeating-radial-gradient(circle at 70% 40%,
+            rgba(0, 0, 0, .10) 0 1px,
+            rgba(0, 0, 0, 0) 1px 4px);
+    opacity: .08;
+    mix-blend-mode: multiply;
+
 }
 
 
@@ -464,7 +524,26 @@ h1 span {
 
 
 header {
-    background-color: rgb(255, 255, 255);
+    background:
+        /* 左：ピンクを大きく */
+        radial-gradient(520px 260px at 18% 70%,
+            rgba(255, 170, 210, .88) 0%,
+            rgba(255, 170, 210, 0) 78%),
+
+        /* 中央：黄色を大きく */
+        radial-gradient(640px 320px at 55% 35%,
+            rgba(255, 238, 150, .92) 0%,
+            rgba(255, 238, 150, 0) 82%),
+
+        /* 右：ピンクを追加して“青緑”を上書き（ここが効く） */
+        radial-gradient(520px 280px at 88% 70%,
+            rgba(255, 190, 220, .70) 0%,
+            rgba(255, 190, 220, 0) 78%),
+
+        /* 仕上げの薄い暖色ベース */
+        linear-gradient(135deg,
+            rgba(255, 225, 240, .22),
+            rgba(255, 246, 190, .22));
     width: 100%;
     height: 80px;
     position: fixed;
@@ -972,11 +1051,76 @@ footer .wrap {
 }
 
 footer .devwrap {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
-    background-color: #010101;
+    color: #f7f7f9;
+    /* 文字は白系 */
+    background: transparent;
+    /* 黒ベタはやめる */
+    overflow: hidden;
+    /* はみ出し防止 */
 }
+
+/* 水彩背景 */
+footer .devwrap::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    /* ぼかしの欠け防止 */
+    z-index: 0;
+
+    /* 例：footer .devwrap::before など */
+    background-color: #fff3dc;
+    /* ★下地を暖色固定（ここ重要） */
+    background:
+        /* 左：ピンクを大きく */
+        radial-gradient(520px 260px at 18% 70%,
+            rgba(255, 170, 210, .88) 0%,
+            rgba(255, 170, 210, 0) 78%),
+
+        /* 中央：黄色を大きく */
+        radial-gradient(640px 320px at 55% 35%,
+            rgba(255, 238, 150, .92) 0%,
+            rgba(255, 238, 150, 0) 82%),
+
+        /* 右：ピンクを追加して“青緑”を上書き（ここが効く） */
+        radial-gradient(520px 280px at 88% 70%,
+            rgba(255, 190, 220, .70) 0%,
+            rgba(255, 190, 220, 0) 78%),
+
+        /* 仕上げの薄い暖色ベース */
+        linear-gradient(135deg,
+            rgba(255, 225, 240, .22),
+            rgba(255, 246, 190, .22));
+
+    /* ★混色をやめる（青緑化しにくい） */
+    background-blend-mode: normal;
+
+    filter: blur(7px) saturate(1.08);
+    transform: scale(1.02);
+
+
+    background-blend-mode: multiply;
+    filter: blur(10px) saturate(1.02);
+}
+
+/* 可読性を担保する薄い黒ベール */
+footer .devwrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    /* ここで締める */
+}
+
+/* 中身を前面に */
+footer .devwrap>* {
+    position: relative;
+    z-index: 2;
+}
+
 
 .footer-left img {
     width: 80%;
@@ -985,7 +1129,7 @@ footer .devwrap {
 }
 
 .footer-left p {
-    color: #ffffff;
+    color: #000000;
     font-size: 0.9em;
     margin: 20px 0;
 }
@@ -1728,7 +1872,8 @@ footer .logo {
 .link-button {
     display: inline-block;
     padding: 18px 18px;
-    background: #101317;
+    background: #ffa2a8;
+    /* チャコール */
     color: #fff;
     text-decoration: none;
     border-radius: 10px;

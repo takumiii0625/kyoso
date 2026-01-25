@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://obfall.com/image/logo_OBFall2.png">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
     <title>OBFall株式会社</title>
     <link rel="icon" href="./image/favicon.png" type="image/png">
     <link href="https://obfall.com/css/app.css" rel="stylesheet">
@@ -21,7 +21,7 @@
         <header class="fadein-first fadein-from-up">
             <div class="wrap">
                 <div class="logo-container">
-                    <img src="./image/logo_OBFall-old.png" class="link" onclick="scrollToTop()" />
+                    <img src="./image/logo_kyoso-old.png" class="link" onclick="scrollToTop()" />
                     <div class="" onclick="scrollToTop()">OBFall株式会社</div>
                 </div>
                 <nav class="nav-01">
@@ -276,9 +276,7 @@
                     〒105-0022<br>
                     東京都港区海岸1-2-3&nbsp;&nbsp;汐留芝離宮ビルディング 21F<br>
                     TEL:03-5403-5904<br>
-                    <a href="{{ url('/human-rights-policy') }}" target="_blank" class="human-rights-policy">
-                        人権に関する基本方針と社内相談窓口
-                    </a>
+
                 </p>
 
                 <small>&copy; OBFall株式会社</small>

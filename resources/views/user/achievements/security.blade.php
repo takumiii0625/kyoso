@@ -49,7 +49,7 @@
         /* === 見出し系 === */
         h2 {
             font-size: 1.8rem;
-            color: #007acc;
+            color: #ffa2a8;
             margin-bottom: 8px;
         }
 
@@ -64,7 +64,7 @@
         h4 {
             font-size: 1.4rem;
             margin-top: 20px;
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         .achievement-lead {
@@ -89,7 +89,7 @@
         }
 
         strong {
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         /* === 画像コンテナ === */
@@ -110,7 +110,7 @@
         /* === 各セクション区分 === */
         .section-products {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
         }
@@ -125,7 +125,7 @@
 
         .section-security {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
             margin-left: 20px;
@@ -231,7 +231,7 @@
         .kicker {
             font-size: 12px;
             letter-spacing: .12em;
-            color: var(--blue);
+            color: #ffa2a8;
             font-weight: 700;
 
             font-family: serif;
@@ -311,7 +311,7 @@
         }
 
         a.more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none;
             text-align: end;
         }
@@ -375,11 +375,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -390,17 +390,16 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>Security Assessment</h1>
-                <div class="sub"><br><br><br><br>安全は、後付けではなく、設計から。<br>開発と診断をワンストップで行い、信頼できるプロダクトづくりを支えます。</div>
+                <h1>資源化・脱炭素の実績</h1>
+                <div class="sub"><br><br><br><br>XXXXXXXXXXXXX（資源化・脱炭素の実績のサブタイトル）
+                </div>
             </div>
         </div>
     </section>
     <main class="wrap">
         <section aria-label="overview">
             <p>
-                OBFallでは、開発現場を理解したエンジニアが脆弱性診断を実施しています。<br>
-                システムの構造や業務要件を踏まえたうえで、「攻撃者の視点」と「開発者の視点」の両面から現実的なリスクを検証。<br>
-                単なる報告にとどまらず、修正提案や再発防止まで一貫してサポートしています。
+                <br>XXXXXXXXXXXXXX（資源化・脱炭素の実績の説明）
             </p>
         </section>
 
@@ -413,23 +412,16 @@
                 <div class="achievement-content">
                     <!-- image: 脆弱性診断のメイン画面 -->
                     <div class="image-container">
-                        <img src="../image/security.jpg" alt="脆弱性診断画面" />
+                        <img src="../image/security.jpg" alt="資源化・脱炭素の実績の画像" />
                     </div>
                     <div class="text">
 
-                        <h4><strong>実績紹介</strong></h4>
+                        <h4><strong>XXXXXXXXX（資源化・脱炭素の実績のタイトル）</strong></h4>
                         <br>
                         <p>
-                            • 開発言語<br>
-                            　JavaScript (Vue.js / React / TypeScript)、Java（Spring Boot）、PHP（Laravel）、Dart（Flutter）<br>
-                            • 診断種別<br>
-                            　Webアプリケーション診断<br>
-                            • 診断手法<br>
-                            　ツール(Burp Suite Professional)による自動診断<br>
-                            　診断作業者による手動診断<br>
-                            • 診断規模<br>
-                            　約100画面、約500機能<br>
+                            XXXXXXXXXXXXXXXX（資源化・脱炭素の実績の説明）
                         </p>
+                        <p><a href="https://career-log.com/" target="_blank" class="link-button">※リンクなどあれば載せる<i class="bi bi-arrow-right-circle-fill"></i></a></p>
 
                     </div>
                 </div>
@@ -444,9 +436,9 @@
                     <div class="bar">
 
 
-                        <p>診断は“終わり”ではなく“成長のはじまり”。<br>
+                        <!-- <p>診断は“終わり”ではなく“成長のはじまり”。<br>
                             開発を理解するセキュリティチームが、
-                            安心して使い続けられるプロダクトの実現を支えています。</p>
+                            安心して使い続けられるプロダクトの実現を支えています。</p> -->
                     </div>
                 </div>
             </div>
@@ -456,7 +448,7 @@
 
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('indexDev') }}">トップ</a></li>
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('achievements') }}">実績・事例紹介</a></li>
-                <li class="breadcrumb-item">脆弱性診断</a></li>
+                <li class="breadcrumb-item">資源化・脱炭素の実績</a></li>
             </ol>
         </nav>
     </main>

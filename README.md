@@ -67,3 +67,7 @@ php artisan optimize:clear
 php artisan config:clear
 php artisan route:clear
 php artisan view:clear
+
+# css起動時に聞かなかったら
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run dev -- --host 0.0.0.0

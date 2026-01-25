@@ -64,10 +64,22 @@ Route::get('/service/ses', function () {
 Route::get('/service/security', function () {
     return view('user/services/security');
 })->name('security');
+
+// 共創ネットワーク
+Route::get('/service/partnership', function () {
+    return view('user/services/partnership');
+})->name('partnership');
+
+
 // 脆弱性診断実績
 Route::get('/achievements/security', function () {
     return view('user/achievements/security');
 })->name('achievementsSecurity');
+
+// 共創ネットワーク
+Route::get('/achievements/partnership', function () {
+    return view('user/achievements/partnership');
+})->name('achievementsPartnership');
 
 // 会社概要
 Route::get('/aboutus', function () {

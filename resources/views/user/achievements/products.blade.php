@@ -49,7 +49,7 @@
         /* === 見出し系 === */
         h2 {
             font-size: 1.8rem;
-            color: #007acc;
+            color: #ffa2a8;
             margin-bottom: 8px;
         }
 
@@ -64,7 +64,7 @@
         h4 {
             font-size: 1.4rem;
             margin-top: 20px;
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         .achievement-lead {
@@ -89,7 +89,7 @@
         }
 
         strong {
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         /* === 画像コンテナ === */
@@ -127,7 +127,7 @@
         /* === 各セクション区分 === */
         .section-products {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
             margin-right: 20px;
@@ -245,7 +245,7 @@
         .kicker {
             font-size: 12px;
             letter-spacing: .12em;
-            color: var(--blue);
+            color: #ffa2a8;
             font-weight: 700;
 
             font-family: serif;
@@ -325,7 +325,7 @@
         }
 
         a.more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none;
             text-align: end;
         }
@@ -393,11 +393,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -408,18 +408,16 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>Products</h1>
-                <div class="sub"><br><br><br><br>人と社会の可能性を広げる、自社プロダクト。<br>OBFallの想いを、サービスというかたちで届ける。</div>
+                <h1>回収拠点づくりの実績</h1>
+                <div class="sub"><br><br><br><br><br>XXXXXXX（回収拠点づくりの実績の一言メッセージ）</div>
             </div>
         </div>
     </section>
     <main class="wrap">
         <section aria-label="overview">
             <p>
-                OBFallの自社開発は、社会の“まだ満たされていないニーズに焦点をあて、
-                「テクノロジーで人生をより豊かにする」という理念を実践する取り組みです。<br>
-                便利さよりも、“人がより自分らしく生きられる仕組み”を目指し、
-                発想から企画、開発、運用まですべて自社で行っています。 </p>
+                XXXXXXX（回収拠点づくりの実績の説明）
+            </p>
         </section>
 
 
@@ -430,20 +428,17 @@
                 <div class="achievement-content">
                     <!-- image: digOnアプリのメイン画面 -->
                     <div class="image-container">
-                        <img src="../image/digOn_logo.png" alt="digOnアプリ画面" />
+                        <img src="../image/digOn_logo.png" alt="回収拠点づくりの実績①の画像" />
                     </div>
                     <div class="text">
 
-                        <h4><strong>digOn（ディグオン）</strong></h4>
+                        <h4><strong>XXXXXXXXXXX（回収拠点づくりの実績①のタイトル）</strong></h4>
                         <br>
                         <p>
-                            音楽と人の感性をつなぐ、新しい発見体験。<br>
-                            音楽との出会いをもっと自由に、もっと感覚的に。<br>
-                            Flutter × Firebase × Webで構築された、クロスプラットフォーム対応の音楽アプリ。<br>
-                            再生履歴・レコメンド・お気に入り管理など、ユーザー体験を重視したUIを設計。
+                            XXXXXXXXXXXXXXXX（回収拠点づくり①の実績の説明）
                         </p>
 
-                        <p><a href="https://dig-on.com/" target="_blank" class="link-button">digOn公式サイト　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
+                        <p><a href="https://dig-on.com/" target="_blank" class="link-button">※リンクなどあれば載せる　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
                     </div>
                 </div>
             </article>
@@ -454,20 +449,16 @@
             <article class="achievement-item">
                 <div class="achievement-content">
                     <div class="image-container">
-                        <img src="../image/store-pass_logo.png" alt="Store-Passアプリ画面" />
+                        <img src="../image/store-pass_logo.png" alt="回収拠点づくりの実績②の画像" />
                     </div>
                     <div class="text">
-                        <h4><strong>ストパス（Store-Pass）</strong></h4>
+                        <h4><strong>XXXXXXXXXXX（回収拠点づくりの実績②のタイトル）</strong></h4>
                         <br>
                         <p>
-                            店舗とユーザーをつなぐ共通特典アプリ。<br>
-                            月額無料で、ユーザーは加盟店舗全体で特典を利用可能。<br>
-                            「店舗をまたぐ特典利用」「垣根を超えた顧客体験」を実現するアプリとして開発。<br>
-                            店舗とユーザーを緩やかにつなぎ、来店体験を拡張する共通プラットフォーム。<br>
-                            加盟店の情報表示や特典管理を統合し、地域の活性化を支える仕組みを提供しています。
+                            XXXXXXXXXXXXXXXX（回収拠点づくり②の実績の説明）
                         </p>
 
-                        <p><a href="https://store-pass.com" target="_blank" class="link-button">Store-Pass公式サイト　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
+                        <p><a href="https://store-pass.com" target="_blank" class="link-button">※リンクなどあれば載せる　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
                     </div>
 
 
@@ -481,16 +472,15 @@
             <article class="achievement-item">
                 <div class="achievement-content">
                     <div class="image-container">
-                        <img src="../image/dx_logo.png" alt="農家向け業務効率化システムアプリ画面" />
+                        <img src="../image/dx_logo.png" alt="回収拠点づくりの実績③の画像" />
                     </div>
                     <div class="text">
-                        <h4><strong>未来共創DX支援事業</strong></h4>
+                        <h4><strong>XXXXXXXXX（回収拠点づくりの実績③のタイトル）</strong></h4>
                         <br>
                         <p>
-                            地域と人に寄り添うパートナーとして、デジタルの力で課題を解決し、お客様と共に新たな価値を生み出すことを目指しています。<br>飲食・小売・農業など、多様な現場と対話を重ね、「現場のリアルな声」を大切にした、”本当に使える”仕組みづくりを進めています。<br><br>
-                            現在は、農家の方々の販売・業務効率化を支援するECプラットフォームの開発を推進中です。
+                            XXXXXXXXXXXXXXXX（回収拠点づくり③の実績の説明）
                         </p>
-                        <p href="" target="_blank" class="non-link-button">（開発中）</p>
+                        <p><a href="https://www.dx-farm.jp/" target="_blank" class="link-button">※リンクなどあれば載せる　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
                     </div>
                 </div>
             </article>
@@ -503,7 +493,7 @@
 
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('indexDev') }}">トップ</a></li>
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('achievements') }}">実績・事例紹介</a></li>
-                <li class="breadcrumb-item">自社開発</a></li>
+                <li class="breadcrumb-item">回収拠点づくりの実績</a></li>
             </ol>
         </nav>
 

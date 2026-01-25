@@ -67,7 +67,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold" for="news_image_url_2" role="button">
                                 お知らせ画像2
                             </label>
@@ -124,7 +124,7 @@
                                 </div>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold" for="content" role="button">

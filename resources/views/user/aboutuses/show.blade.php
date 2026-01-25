@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://obfall.com/image/logo_OBFall2.png">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
     <title>OBFall株式会社</title>
     <link rel="icon" href="../image/favicon.png" type="image/png">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -142,11 +142,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -156,8 +156,8 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>About US</h1>
-                <div class="sub"><br><br><br><br>私たちOBFall株式会社について<br>　</div>
+                <h1>会社概要</h1>
+                <div class="sub"><br><br><br><br>私たち株式会社共創について<br>　</div>
             </div>
         </div>
     </section>
@@ -173,18 +173,18 @@
                     <ul class="p-0">
                         <li>
                             <p class="about-head">会社名</p>
-                            <p class="about-data">OBFall株式会社</p>
+                            <p class="about-data">株式会社共創</p>
                         </li>
                         <li>
                             <p class="about-head">代表取締役</p>
-                            <p class="about-data">上遠野　博紀</p>
+                            <p class="about-data">河原　英信</p>
                         </li>
                         <li>
                             <p class="about-head">所在地</p>
                             <p class="about-data">
-                                〒105-0022<br>
-                                東京都港区海岸1-2-3<br>
-                                汐留芝離宮ビルディング 21F
+                                〒XXX-XXXX<br>
+                                XXXXX県XXXXX市XXXX<br>
+                                XXXXXビル XXXF
                             </p>
 
                             <!-- 地図（レスポンシブ） -->
@@ -205,21 +205,21 @@
 
                         <li>
                             <p class="about-head">電話番号</p>
-                            <p class="about-data">03-5403-5904<br>
+                            <p class="about-data">XX-XXXX-XXXX<br>
                             </p>
                         </li>
                         <li>
                             <p class="about-head">設立</p>
-                            <p class="about-data">2022年8月2日<br>
+                            <p class="about-data">XXXX年XX月XX日<br>
                             </p>
                         </li>
                         <li>
                             <p class="about-head">資本金</p>
-                            <p class="about-data">1,000,000円</p>
+                            <p class="about-data">XXX,XXX,XXX円</p>
                         </li>
                         <li>
                             <p class="about-head">取引先銀行</p>
-                            <p class="about-data">みずほ銀行</p>
+                            <p class="about-data">XXXXX銀行</p>
                         </li>
                     </ul>
                 </div>

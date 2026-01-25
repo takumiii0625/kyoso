@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://obfall.com/image/logo_OBFall2.png">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
     <title>OBFall株式会社</title>
     <link rel="icon" href="./image/favicon.png" type="image/png">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -22,32 +22,29 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
         <div class="main-visual ">
             <div class="img-wrap">
-                <img src="image/about_us2.jpg">
-                <img src="image/achievements.jpg">
-                <img src="image/recruit.jpg">
+                <img src="image/about_us2.jpg" alt="メイン画像①">
+                <img src="image/achievements.jpg" alt="メイン画像②">
+                <img src="image/recruit.jpg" alt="メイン画像③">
             </div>
         </div>
         <div class="text-container">
             <p class="fadein-scroll fadein-from-down smaller-text custom-line-height">
-                <strong class="larger-text">「あなたの、あなたによる、あなたのための」<br>
-                    を全てのひとへ</strong>
+                <strong class="larger-text">XXXXXXXXXX(メインキャッチフレーズ)
+                </strong>
                 <br>
-                私たちは皆、人生の主人公です。
-                働くことも人生の一部。<br>
-                OBFall株式会社は、<br>従来にない新しい会社の形を実現します。<br>
-                <a href="{{ route('philosophy') }}" class="top-link-button shadow mt-4">
-                    企業理念はこちら <i class="fa-solid fa-circle-arrow-right ms-1"></i>
-                </a>
+                XXXXXXXXXXXX（サブキャッチフレーズ）<br>
+
+
             </p>
 
         </div>
@@ -57,7 +54,7 @@
     <main>
         <div id="about" class="service pt-4">
             <h1 class="fadein-scroll fadein-from-left m-0 text-start">
-                <div class="heading-chip">SERVICE</div>
+                <div class="heading-chip">PHILOSOPHY</div>
             </h1>
             <ul>
                 <section class="py-1 py-md-5">
@@ -67,26 +64,27 @@
                             <div class="col-md-6 order-2 order-md-1">
                                 <img
                                     src="{{ asset('image/service.jpg') }}"
-                                    alt="サービスのイメージ"
+                                    alt="企業理念のイメージ画像"
                                     class="img-fluid rounded shadow-sm d-block"
                                     style="max-width:100%; height:auto;">
                             </div>
 
                             {{-- 右：見出し・英字・内容・ボタン --}}
                             <div class="col-md-6 order-1 order-md-2">
-                                <div class="text-muted small mb-1 text-end text-md-start">サービス</div>
-                                <h2 class="h4 mb-3 text-container maintitle text-end text-md-start">SERVICE</h2>
+                                <div class="text-muted small mb-1 text-end text-md-start">企業理念</div>
+                                <h2 class="h4 mb-3 text-container maintitle text-end text-md-start">PHILOSOPHY</h2>
 
 
                                 <p class="mb-4">
-                                    ITの力で、人と社会の可能性を広げる。<br>
-                                    自社開発・受託開発・脆弱性診断・SESの4つの事業を通じて、人々の人生をより豊かにします。
+                                    「捨てるはずだった油」を、子どもたちの未来と地域の力に。<br>
+                                    家庭やお店から出る廃食油は、ただの“ごみ”ではありません。<br>
+                                    集めて、つないで、循環させれば、地域の挑戦を支える“資源”になります。
 
                                 </p>
 
                                 {{-- 遷移ボタン（お好みでどちらか） --}}
-                                <a href="{{ route('userServicesShow') }}" class="link-button shadow">
-                                    サービス詳細画面へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
+                                <a href="{{ route('philosophy') }}" class="link-button shadow">
+                                    企業理念へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
                                 </a>
                             </div>
                         </div>
@@ -94,7 +92,7 @@
                 </section>
             </ul>
             <h1 class="fadein-scroll fadein-from-right m-0 text-end">
-                <div class="heading-chip--flip">ACHIEVEMENTS</div>
+                <div class="heading-chip--flip">PROJECTS</div>
             </h1>
             <ul>
                 <section class="py-1 py-md-5">
@@ -102,22 +100,23 @@
                         <div class="row g-4 align-items-center">
                             {{-- 左：テキスト --}}
                             <div class="col-md-6">
-                                <div class="text-muted small mb-1">実績・事例紹介</div>
-                                <h2 class="h4 maintitle text-container mb-3">ACHIEVEMENTS</h2>
+                                <div class="text-muted small mb-1">プロジェクト</div>
+                                <h2 class="h4 maintitle text-container mb-3">PROJECTS</h2>
 
                                 <p class="mb-4">
-                                    ITの可能性を、実績で証明する。<br>
-                                    自社開発・受託開発・SES・脆弱性診断の4つの領域で、<br> “つくる・支える・守る”を軸に、課題解決に挑んでいます。
+                                    XXXXXXXXXX(プロジェクトについて3行程度の軽い説明)<br>
+                                    XXXXXXXXXX<br>
+                                    XXXXXXXXXX
                                 </p>
-                                <a href="{{ route('achievements') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
-                                    実績・事例紹介 <i class="fa-solid fa-circle-arrow-right ms-1"></i>
+                                <a href="{{ route('userServicesShow') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
+                                    プロジェクトの概要 <i class="fa-solid fa-circle-arrow-right ms-1"></i>
                                 </a>
                             </div>
 
                             {{-- 右：画像（トリミングなし） --}}
                             <div class="col-md-6">
-                                <img src="{{ asset('image/achievements.jpg') }}"
-                                    alt="サービスのイメージ"
+                                <img src="{{ asset('image/service.jpg') }}"
+                                    alt="プロジェクトのイメージ画像"
                                     class="img-fluid rounded shadow-sm d-block"
                                     style="max-width:100%;height:auto;">
                             </div>
@@ -126,44 +125,71 @@
                 </section>
             </ul>
             <h1 class="fadein-scroll fadein-from-left m-0 text-start">
-                <div class="heading-chip">ABOUT US</div>
+                <div class="heading-chip">ACHIEVEMENTS</div>
             </h1>
             <ul>
                 <section class="py-1 py-md-5">
                     <div class="container">
                         <div class="row g-4 align-items-center">
                             {{-- 左：画像（トリミングなし） --}}
-                            <div class="col-md-5 order-2 order-md-1">
-                                <div class="about-card"> <!-- 外側ラッパ：重なり全体を管理 -->
-                                    <div class="about-card__main"> <!-- 大画像：角丸でクリップ -->
-                                        <img src="{{ asset('image/about_us2.jpg') }}" alt="">
-                                    </div>
-
-                                    <div class="about-card__sub"> <!-- 小画像：右下にはみ出して重ねる -->
-                                        <img src="{{ asset('image/about_us1.jpg') }}" alt="">
-                                    </div>
-                                </div>
+                            <div class="col-md-6 order-2 order-md-1">
+                                <img
+                                    src="{{ asset('image/service.jpg') }}"
+                                    alt="実績・事例紹介のイメージ画像"
+                                    class="img-fluid rounded shadow-sm d-block"
+                                    style="max-width:100%; height:auto;">
                             </div>
-                            <div class="col-md-1 order-2 order-md-1"></div>
 
 
                             {{-- 右：見出し・英字・内容・ボタン --}}
                             <div class="col-md-6 order-1 order-md-2">
-                                <div class="text-muted small mb-1 text-end text-md-start">会社概要</div>
-                                <h2 class="h4 mb-3 text-container text-end text-md-start maintitle">ABOUT US</h2>
+                                <div class="text-muted small mb-1 text-end text-md-start">実績・事例紹介</div>
+                                <h2 class="h4 mb-3 text-container text-end text-md-start maintitle">ACHIEVEMENTS</h2>
 
 
                                 <p class="mb-4">
-                                    会社情報をご紹介いたします。<br>
-                                    OBFall株式会社は、ITの力で社会課題の解決を図り、
-                                    人と社会の可能性を広げる企業として成長を続けてまいります。<br>
+                                    「油を集める」だけじゃない。<br>
+                                    地域の“続く力”を生む、私たちの挑戦と成果。
 
                                 </p>
 
                                 {{-- 遷移ボタン（お好みでどちらか） --}}
-                                <a href="{{ route('aboutus') }}" class="link-button shadow">
+                                <a href="{{ route('achievements') }}" class="link-button shadow">
+                                    実績・事例紹介画面へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
+            <h1 class="fadein-scroll fadein-from-right m-0 text-end">
+                <div class="heading-chip--flip">ABOUT US</div>
+            </h1>
+            <ul>
+                <section class="py-1 py-md-5">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            {{-- 左：テキスト --}}
+                            <div class="col-md-6">
+                                <div class="text-muted small mb-1">会社概要</div>
+                                <h2 class="h4 maintitle text-container mb-3">ABOUT US</h2>
+
+                                <p class="mb-4">
+                                    XXXXXXXXXX(会社概要について３行程度の軽い説明)<br>
+                                    XXXXXXXXXX<br>
+                                    XXXXXXXXXX
+                                </p>
+                                <a href="{{ route('aboutus') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
                                     会社概要画面へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
                                 </a>
+                            </div>
+
+                            {{-- 右：画像（トリミングなし） --}}
+                            <div class="col-md-6">
+                                <img src="{{ asset('image/about_us1.jpg') }}"
+                                    alt="会社概要のイメージ画像"
+                                    class="img-fluid rounded shadow-sm d-block"
+                                    style="max-width:100%;height:auto;">
                             </div>
                         </div>
                     </div>
@@ -259,46 +285,15 @@
                     </div>
                 </section>
             </ul>
-            <h1 class="fadein-scroll fadein-from-left m-0 text-start">
-                <div class="heading-chip">RECRUIT</div>
-            </h1>
-            <ul>
-                <section class="py-1 py-md-5">
-                    <div class="container">
-                        <div class="row g-4 align-items-center">
-                            {{-- 右：画像（トリミングなし） --}}
-                            <div class="col-md-6 order-2 order-md-1">
-                                <img src="{{ asset('image/recruit.jpg') }}"
-                                    alt="サービスのイメージ"
-                                    class="img-fluid rounded shadow-sm d-block"
-                                    style="max-width:100%;height:auto;">
-                            </div>
-                            {{-- 左：テキスト --}}
-                            <div class="col-md-6 order-1 order-md-2">
-                                <div class="text-muted small mb-1 text-end text-md-start">採用情報</div>
-                                <h2 class="h4 mb-3 text-container text-end text-md-start maintitle">RECRUIT</h2>
 
-                                <p class="mb-4">
-                                    あなたの、あなたによる、あなたのための場所で。<br>
-                                    私たちは、働くことを人生の一部として誇れる舞台をつくります。<br>
-                                    OBFallでの挑戦が、あなたの成長と物語を彩りますように。
-                                </p>
-                                <a href="https://obfall-recruit.com/" class="link-button shadow" target="_blank">
-                                    採用情報 <i class="fa-solid fa-circle-arrow-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </ul>
         </div>
 
     </main>
     <section class="ending" aria-label="closing">
         <div class="wrap">
-            <p style="font-style:italic;font-size:12px;margin-bottom:.3rem">of you, by you, for all.</p>
-            <p class="muted small" style="margin-top:0">あなたの、あなたによる、あなたのための。</p>
-            <p class="muted small" style="margin-top:0">その想いから、すべての人の未来へ。</p>
+            <p style="font-style:italic;font-size:12px;margin-bottom:.3rem">競い合う競争ではなく、共に豊かな地域を創る</p><br><br>
+            <!-- <p class="muted small" style="margin-top:0">XXXXXXXXX</p>
+            <p class="muted small" style="margin-top:0">XXXXXXXXX</p> -->
 
             <!-- CTAを置くならここに： <a href="/contact" class="btn">Contact</a> -->
         </div>

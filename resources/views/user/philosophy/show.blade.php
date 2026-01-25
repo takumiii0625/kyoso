@@ -56,7 +56,7 @@
         h2 {
             font-size: clamp(18px, 2.6vw, 26px);
             font-weight: 700;
-            color: var(--blue)
+            color: #ffa2a8;
         }
 
         h3 {
@@ -222,7 +222,7 @@
             letter-spacing: .12em;
             text-transform: uppercase;
             font-weight: 700;
-            color: var(--blue);
+            color: #ffa2a8;
             font-size: 13px;
             margin-bottom: .6rem;
             font-family: serif;
@@ -246,7 +246,7 @@
         }
 
         .origin .bar {
-            border-left: 4px solid var(--blue);
+            border-left: 4px solid #ffa2a8;
             padding-left: 16px
         }
 
@@ -284,11 +284,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -297,8 +297,11 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>Philosophy</h1>
-                <div class="sub"><br><br><br><br>「あなたの、あなたによる、あなたのための」<br>　をすべての人へ。</div>
+                <h1>企業理念</h1>
+                <div class="sub"><br><br>
+                    「捨てるはずだった油」を、子どもたちの未来と地域の力に。<br>
+                    家庭やお店から出る廃食油は、ただの“ごみ”ではありません。<br>
+                    集めて、つないで、循環させれば、地域の挑戦を支える“資源”になります。<br>　</div>
             </div>
         </div>
     </section>
@@ -308,10 +311,11 @@
     <section id="vision" style="background:var(--blue-weak);border-top:none">
         <div class="wrap pt-4">
             <div class="card" style="background:#fff">
-                <div class="kicker">Vision</div>
-                <h2 style="color:var(--ink)">「あなたの、あなたによる、あなたのための」をすべての人へ。</h2>
-                <p>テクノロジーの力で、人と社会の可能性を広げ、
-                    誰もが自分らしく生き、挑戦できる未来を目指します。</p>
+                <div class="kicker">Vision（目指す未来）</div>
+                <h2 style="color:var(--ink)">消費者から、循環者へ。
+                </h2>
+                <p>地域にある“もったいない”が、当たり前に価値へ変わり、<br>
+                    子ども・子育て・福祉・防災など、地域の大切な活動が継続して育つ社会をつくります。</p>
             </div>
         </div>
     </section>
@@ -321,9 +325,11 @@
     <section id="mission" style="background:var(--blue-weak);border-top:none">
         <div class="wrap p-4">
             <div class="card" style="background:#fff">
-                <div class="kicker">Mission</div>
-                <h2 style="color:var(--ink)">働くすべての人が、自分自身のために、自由にそして熱意を持って働ける社会をつくっていきます。</h2>
-                <p>その実現のために、私たちはテクノロジーを通じて、挑戦する人と組織を支え、“つくる・支える・守る”という3つの軸で、社会に新しい価値を届け続けます。</p>
+                <div class="kicker">Mission（私たちの使命）</div>
+                <h2 style="color:var(--ink)">地域の小さな協力を、続く仕組みに変える。</h2>
+                <p>私たちは、廃食油回収を「善意」だけで終わらせません。<br>
+                    回収・資源化・収益の循環を“見える化”し、地域の団体や学校とともに、<br>
+                    誰でも参加でき、続けられる循環の仕組みを実装します。</p>
             </div>
         </div>
     </section>
@@ -335,16 +341,22 @@
             <h2>　3つの柱</h2>
             <div class="values">
                 <div class="value">
-                    <h4>理念採用</h4>
-                    <p class="muted">共感を軸に、人と組織をつなぐ。理念に共鳴する仲間とともに、価値ある未来を創ります。</p>
+                    <div class="kicker">Circular</div>
+                    <h4>循環は、地域の希望になる</h4>
+                    <p class="muted">回収量が増えるほど、地域が豊かになる。<br>
+                        “集める”はゴールではなく、地域の価値が戻ってくるスタートです。</p>
                 </div>
                 <div class="value">
-                    <h4>ES＝CS</h4>
-                    <p class="muted">働く人の幸福が、顧客の満足を生む。社員満足と顧客満足の両立を通じて、持続的な成長を目指します。</p>
+                    <div class="kicker">Community</div>
+                    <h4>子どもから始まる、地域の変化</h4>
+                    <p class="muted">授業や体験を通じて、子どもが学び、家族が動き、地域が変わる。<br>
+                        「知る→やってみる→広める」を、学校と一緒に育てます。</p>
                 </div>
                 <div class="value">
-                    <h4>Growth &amp; Challenge</h4>
-                    <p class="muted">一人ひとりが自らの成長に挑み、変化を恐れず前へ。挑戦を後押しする文化を大切にします。</p>
+                    <div class="kicker">Collaboration</div>
+                    <h4>共創で、続く仕組みにする</h4>
+                    <p class="muted">自治体・企業・学校・NPO・町内会——<br>
+                        立場が違う人たちの力を“役割分担”で束ね、継続できる形にします。</p>
                 </div>
             </div>
         </div>
@@ -354,9 +366,21 @@
     <section id="message">
         <div class="wrap pt-4">
             <div class="message">
-                <div class="kicker">Message</div>
-                <h3 style="margin-top:.2rem">人と社会が、ともに成長できる世界へ。</h3>
-                <p>OBFallは、ITの力で“人”と“社会”が共に成長できる世界を目指しています。働くことが、あなたの人生を豊かにする体験であってほしい。その想いを胸に、私たちは挑戦を続けていきます。</p>
+                <div class="kicker">Message（代表メッセージ）</div>
+                <h3 style="margin-top:.2rem">XXXXXXX（Messageタイトル）
+                </h3>
+                <p>
+                    地域には、良い活動がたくさんあります。<br>
+                    でも、資金や人手が足りず、続けられない現実もあります。<br>
+                    一方で、家庭や飲食店から毎日出る廃食油は、まだ十分に活かされていません。<br>
+                    私たちは、この“眠っている資源”を、地域の未来に回す仕組みに変えたい。<br><br>
+
+                    油を出す人は、難しいことをしなくていい。<br>
+                    「いつもの油を、いつもの場所へ」持っていくだけで、
+                    子どもたちの学びや、福祉や、防災の力になります。<br><br>
+
+                    小さな循環から、大きな循環へ。<br>
+                    一緒に、地域を豊かにしていきましょう。</p>
             </div>
         </div>
     </section>
@@ -367,9 +391,13 @@
         <div class="wrap pt-4">
             <div class="origin">
                 <div class="bar">
-                    <div class="kicker">Origin of Our Philosophy</div>
-                    <h3>理念と社名の由来</h3>
-                    <p>「あなたの、あなたによる、あなたのための」という言葉は、アメリカ第16代大統領エイブラハム・リンカーンの演説に由来しています。社名 <strong>OBFall</strong> は、その演説に登場する “of the people, by the people, for the people” に、<strong>“すべての人へ（all）”</strong> という想いを込めて名づけました。OBFallは、テクノロジーの力で、すべての人に可能性を届ける企業でありたいと考えています。</p>
+                    <div class="kicker">Origin</div>
+                    <h3>理念の由来・なぜこの事業なのか</h3>
+                    <p>“捨てられるもの”を、“地域の資源”へ。<br>
+                        廃食油は、毎日の暮らしから必ず生まれる資源です。<br>
+                        だからこそ、誰もが参加でき、地域に成果が戻る循環をつくれば、
+                        まちの課題（教育・福祉・防災）に、継続的な力を届けられる。<br>
+                        その確信が、私たちの原点です。</p>
                 </div>
             </div>
         </div>
