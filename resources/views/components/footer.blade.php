@@ -12,10 +12,13 @@
             <p>
                 〒236-0058<br>
                 神奈川県横浜市金沢区能見台6-25-10<br>
-                MAIL: kyousou1216@gmail.com<br>
-
+                MAIL: kyousou1216@gmail.com
             </p>
-
+            <div class="footer-links">
+                <a href="{{ route('privacy-policy') }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none me-3" style="font-size: 0.85rem; color: #333;">
+                    プライバシーポリシー
+                </a>
+            </div>
         </div>
 
         <!-- PC:右 / SP:2番目（お問い合わせボタン） -->
