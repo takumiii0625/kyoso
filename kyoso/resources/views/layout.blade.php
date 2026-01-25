@@ -24,7 +24,7 @@
     <div class="contact-logo1">
         <div class="contact-logo">
 
-            <img src="./image/logo_OBFall.png" class="link" />
+            <img src="./image/logo_kyoso.png" class="link" />
             <a href="{{ url('/') }}">
                 <div class="title">OBFall株式会社</div>
             </a>

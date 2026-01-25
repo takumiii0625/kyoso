@@ -112,8 +112,28 @@
         }
 
         header {
+            background:
+                /* 左：ピンクを大きく */
+                radial-gradient(520px 260px at 18% 70%,
+                    rgba(255, 170, 210, .88) 0%,
+                    rgba(255, 170, 210, 0) 78%),
 
-            background: linear-gradient(180deg, #fff 0%, #F6FAFD 100%);
+                /* 中央：黄色を大きく */
+                radial-gradient(640px 320px at 55% 35%,
+                    rgba(255, 238, 150, .92) 0%,
+                    rgba(255, 238, 150, 0) 82%),
+
+                /* 右：ピンクを追加して“青緑”を上書き（ここが効く） */
+                radial-gradient(520px 280px at 88% 70%,
+                    rgba(255, 190, 220, .70) 0%,
+                    rgba(255, 190, 220, 0) 78%),
+
+                /* 仕上げの薄い暖色ベース */
+                linear-gradient(135deg,
+                    rgba(255, 225, 240, .22),
+                    rgba(255, 246, 190, .22));
+
+
             border-bottom: 1px solid var(--line)
         }
 
@@ -188,7 +208,7 @@
 
         .cta {
             display: inline-block;
-            background: var(--blue);
+            background: #ffa2a8;
             color: #fff;
             text-decoration: none;
             padding: 12px 18px;
@@ -196,7 +216,7 @@
         }
 
         .more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none
         }
 
@@ -333,11 +353,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -345,17 +365,14 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>IT × Collaboration</h1>
-                <div class="sub"><br><br><br><br>ともにつくり、ともに前へ。<br>クライアントの想いを汲み取り、共に課題を解決するパートナーとして。</div>
+                <h1>学校・学びの実装</h1>
+                <div class="sub"><br><br><br><br>総合の学習や体験を通じて「循環者」を育てる。</div>
             </div>
         </div>
     </section>
     <main class="wrap">
         <section aria-label="overview ">
-            <p>OBFallの受託開発は、「作る」ことを目的とせず、「価値を生み出す」ことを目的とする開発です。<br>
-                Webサービス、アプリケーション、業務システムなど多様な開発に対応しながら、
-                企画から設計・デザイン・実装・セキュリティ診断まで一貫した体制で提供しています。<br>
-                クライアントと同じ目線で課題を見つめ、長く続く価値を共に育てていきます。
+            <p>XXXXXXX（学校・学びの実装の大まかな説明）
 
             </p>
         </section>
@@ -363,100 +380,39 @@
         <section id="principles" class="bg-blue-weak py-5">
             <div class="wrap">
                 <div class="vstack gap-4"> <!-- ← 縦に積む -->
-                    <!-- Vision -->
-                    <article id="vision" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                        <span class="icon-badge mb-3"><i class="fa-solid fa-bullseye" aria-hidden="true"></i>
-                            <div class="kicker">INSIGHT</div>
-                        </span>
-                        <h2 class="principle-title">本質をともに見つめる</h2>
-                        <p class="mb-0">課題を「作ること」ではなく「解決すること」として捉え、共に考え抜く。<br>
-                            クライアントの想いや事業の背景を深く理解し、長期的な成長を見据えた開発を行います。
 
-                        </p>
-                    </article>
                     <!-- Vision -->
                     <article id="vision" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                        <span class="icon-badge mb-3"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-                            <div class="kicker">SYNTHESIS</div>
+                        <span class="icon-badge mb-3"><i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">デザインと技術の融合</h2>
-                        <p class="mb-0">使いやすさ・伝わりやすさ・拡張性を意識し、想いをかたちに。<br>
-                            UI/UX・機能性・パフォーマンスのすべてで“心地よく使われる体験”を設計します。</p>
+                        <h2 class="principle-title">XXXXXXX(学校・学びの実装についての柱①)
+                        </h2>
+                        <p class="mb-0">XXXXXXXX（柱①の説明）</p>
                     </article>
 
                     <!-- Mission -->
                     <article id="mission" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                        <span class="icon-badge mb-3"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-                            <div class="kicker">RELIABILITY</div>
+                        <span class="icon-badge mb-3"><i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">安心まで届ける開発体制</h2>
-                        <p class="mb-0">
-                        <p>
-                            開発後には、自社のセキュリティチームによる<strong>脆弱性診断</strong>を実施。<br>
-                            見た目や機能だけでなく、安全性まで一貫して担保できることが私たちの強みです。<br>
-                            「創って終わり」ではなく、「安心して使い続けられる」未来を届けます。</p>
+                        <h2 class="principle-title">XXXXXXXX（学校・学びの実装についての柱②）</h2>
+                        <p class="mb-0">XXXXXXXX（柱②の説明）</p>
                     </article>
 
                     <!-- Values -->
                     <article id="values" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                        <span class="icon-badge mb-3"><i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                            <div class="kicker">PARTNERSHIP</div>
+                        <span class="icon-badge mb-3"><i class="fa-solid fa-gem" aria-hidden="true"></i>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">長く続く関係を築く</h2>
-                        <p class="mb-0">納品して終わりではなく、成長と変化に寄り添う“伴走型”の開発を大切に。<br>
-                            プロダクトの成長を共に見届けながら、技術支援・改善提案を継続的に行います。</p>
+                        <h2 class="principle-title">XXXXXXXX（学校・学びの実装についての柱③）</h2>
+                        <p class="mb-0">XXXXXXXX（柱③の説明）</p>
                     </article>
 
                 </div>
             </div>
         </section>
 
-
-        <section id="values">
-            <div class="" style="background:var(--blue-weak);border-top:none">
-
-                <h2 class="mt-5">選ばれる理由</h2>
-
-                <div id="principles" class="bg-blue-weak py-5">
-                    <div class="wrap">
-                        <div class="vstack gap-4"> <!-- ← 縦に積む -->
-                            <!-- Vision -->
-                            <article id="vision" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                                <span class="icon-badge mb-3"><i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                                    <div class="kicker">COCREATION</div>
-                                </span>
-                                <h2 class="principle-title">共創の姿勢</h2>
-                                <p class="mb-0">単なる受託ではなく、クライアントのビジョンを共有し、同じチームとして挑む。<br>
-                                    プロジェクトの成功を「成果物の完成」ではなく「価値の創出」として捉えます。</p>
-                            </article>
-                            <!-- Vision -->
-                            <article id="vision" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                                <span class="icon-badge mb-3"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-                                    <div class="kicker">CONSISTENCY</div>
-                                </span>
-                                <h2 class="principle-title">一貫した技術力と体制</h2>
-                                <p class="mb-0">企画から設計・デザイン・開発・診断までをワンストップで対応。<br>
-                                    社内のエンジニア・デザイナー・セキュリティチームが密に連携し、
-                                    品質・スピード・安心をすべて両立させます。</p>
-                            </article>
-
-                            <!-- Mission -->
-                            <article id="mission" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
-                                <span class="icon-badge mb-3"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                                    <div class="kicker">EMPOWERMENT</div>
-                                </span>
-                                <h2 class="principle-title">成長を支える開発文化</h2>
-                                <p class="mb-0">
-                                <p>自社開発・SESで培ったノウハウを常にアップデートし、
-                                    プロジェクトごとに新しい価値を生み出す仕組みを持っています。<br>
-                                    開発を通じて、人も、企業も、社会も前へ進むことを目指します。</p>
-                            </article>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <div aria-label="products" class="my-5 shadow">
             <h2 class="h4 mb-3">実績・事例紹介</h2>
@@ -468,9 +424,9 @@
 
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100 p-3 border rounded-3">
-                        <img src="../image/careerlog_logo.png" alt="CareerLog ロゴ"
+                        <img src="../image/careerlog_logo.png" alt="学校・学びの実装①の実績の写真"
                             class="product-logo mb-2" loading="lazy">
-                        <p class="mb-0">CareerLog</p>
+                        <p class="mb-0">XXXXXXXX（学校・学びの実装①の実績のタイトル）</p>
                     </div>
                 </div>
 
@@ -479,9 +435,11 @@
 
                 <div class="col ">
                     <div class="d-flex flex-column align-items-center text-center h-100 p-3 border rounded-3">
-                        <img src="../image/NoaChoice_logo.jpg" alt="NoaChoice ロゴ"
+                        <img src="../image/NoaChoice_logo.jpg" alt="学校・学びの実装②の実績の写真"
                             class="product-logo mb-2" loading="lazy">
-                        <p class="mb-0">NoaChoice</p>
+                        <p class="mb-0">
+                            XXXXXXX（学校・学びの実装②の実績のタイトル）
+                        </p>
                     </div>
                 </div>
 
@@ -496,8 +454,8 @@
         <nav aria-label="breadcrumb" class="m-3">
             <ol class="breadcrumb" style="--bs-breadcrumb-divider:'＞'; font-size: clamp(.875rem, 1.8vw, 1rem);">
                 <li class="breadcrumb-item"><a href="{{ route('indexDev') }}">トップ</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('userServicesShow') }}">サービス</a></li>
-                <li class="breadcrumb-item">受託開発</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('userServicesShow') }}">プロジェクト概要</a></li>
+                <li class="breadcrumb-item">学校・学びの実装</a></li>
             </ol>
         </nav>
     </main>

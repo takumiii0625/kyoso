@@ -13,7 +13,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <title>自社開発（Products） | OBFall Inc.</title>
+    <title>Product1</title>
     <style>
         :root {
             --ink: #101317;
@@ -112,8 +112,28 @@
         }
 
         header {
+            background:
+                /* 左：ピンクを大きく */
+                radial-gradient(520px 260px at 18% 70%,
+                    rgba(255, 170, 210, .88) 0%,
+                    rgba(255, 170, 210, 0) 78%),
 
-            background: linear-gradient(180deg, #fff 0%, #F6FAFD 100%);
+                /* 中央：黄色を大きく */
+                radial-gradient(640px 320px at 55% 35%,
+                    rgba(255, 238, 150, .92) 0%,
+                    rgba(255, 238, 150, 0) 82%),
+
+                /* 右：ピンクを追加して“青緑”を上書き（ここが効く） */
+                radial-gradient(520px 280px at 88% 70%,
+                    rgba(255, 190, 220, .70) 0%,
+                    rgba(255, 190, 220, 0) 78%),
+
+                /* 仕上げの薄い暖色ベース */
+                linear-gradient(135deg,
+                    rgba(255, 225, 240, .22),
+                    rgba(255, 246, 190, .22));
+
+
             border-bottom: 1px solid var(--line)
         }
 
@@ -171,7 +191,7 @@
 
         .cta {
             display: inline-block;
-            background: var(--blue);
+            background: #ffa2a8;
             color: #fff;
             text-decoration: none;
             padding: 12px 18px;
@@ -179,7 +199,7 @@
         }
 
         .more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none
         }
 
@@ -315,12 +335,11 @@
         <x-header />
         <nav class="nav-02">
             <ul>
-
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -329,15 +348,15 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>IT × Vision</h1>
-                <div class="sub"><br><br><br><br>人と社会の可能性を広げる、自社プロダクト。</div>
+                <h1>回収拠点づくり</h1>
+                <div class="sub"><br><br><br><br>地域の生活導線に回収拠点をつくり、参加のハードルを下げる。</div>
             </div>
         </div>
     </section>
     <main class="wrap">
 
         <section aria-label="overview">
-            <p>OBFallの自社開発は、「テクノロジーで人生をより豊かにする」という理念をかたちにする取り組みです。<br>人の生き方や働き方、暮らしの中にある課題を見つめ、誰もが自分らしく生きられる社会を実現するためのプロダクトを開発しています。</p>
+            <p><br>XXXXXXXXXX（回収拠点づくりの大まかな説明）</p>
         </section>
 
 
@@ -348,28 +367,29 @@
                     <!-- Vision -->
                     <article id="vision" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
                         <span class="icon-badge mb-3"><i class="fa-solid fa-seedling" aria-hidden="true"></i>
-                            <div class="kicker">EMBODY</div>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">人の想いを形にする</h2>
-                        <p class="mb-0">誰かの「こうありたい」という想いを起点に、テクノロジーで実現へと近づけます。</p>
+                        <h2 class="principle-title">XXXXXXX(回収拠点づくりについての柱①)
+                        </h2>
+                        <p class="mb-0">XXXXXXXX（柱①の説明）</p>
                     </article>
 
                     <!-- Mission -->
                     <article id="mission" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
                         <span class="icon-badge mb-3"><i class="fa-solid fa-people-group" aria-hidden="true"></i>
-                            <div class="kicker">EMPATHY</div>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">社会に寄り添うサービスづくり</h2>
-                        <p class="mb-0">便利さや効率だけでなく、人と人のつながり・安心・挑戦を支える仕組みを届けます。</p>
+                        <h2 class="principle-title">XXXXXXXX（回収拠点づくりについての柱②）</h2>
+                        <p class="mb-0">XXXXXXXX（柱②の説明）</p>
                     </article>
 
                     <!-- Values -->
                     <article id="values" class="card principle-card h-100 border-0 shadow-sm rounded-4 p-4">
                         <span class="icon-badge mb-3"><i class="fa-solid fa-gem" aria-hidden="true"></i>
-                            <div class="kicker">COCREATE</div>
+                            <div class="kicker"></div>
                         </span>
-                        <h2 class="principle-title">共に育てるプロダクト</h2>
-                        <p class="mb-0">使う人と共に磨き、社会に溶け込む“続いていく価値”を生み出します。</p>
+                        <h2 class="principle-title">XXXXXXXX（回収拠点づくりについての柱③）</h2>
+                        <p class="mb-0">XXXXXXXX（柱③の説明）</p>
                     </article>
 
                 </div>
@@ -390,9 +410,9 @@
 
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100 p-3 border rounded-3">
-                        <img src="../image/digOn_logo.png" alt="digOn ロゴ"
+                        <img src="../image/digOn_logo.png" alt="回収拠点づくり①の写真"
                             class="product-logo mb-2" loading="lazy">
-                        <p class="mb-0">音楽発掘をもっと身近にする音楽アプリ</p>
+                        <p class="mb-0"> XXXXXXX（回収拠点づくり①の実績のタイトル）</p>
                     </div>
                 </div>
 
@@ -401,9 +421,9 @@
 
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100 p-3 border rounded-3">
-                        <img src="../image/store-pass_logo.png" alt="ストパス ロゴ"
+                        <img src="../image/store-pass_logo.png" alt="回収拠点づくり②の写真"
                             class="product-logo mb-2" loading="lazy">
-                        <p class="mb-0">ストア特化の来店・販促パスポート</p>
+                        <p class="mb-0"> XXXXXXX（回収拠点づくり②の実績のタイトル）</p>
                     </div>
                 </div>
 
@@ -412,9 +432,9 @@
 
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100 p-3 border rounded-3">
-                        <img src="../image/dx_logo.png" alt="農業向け業務効率化 ロゴ"
+                        <img src="../image/dx_logo.png" alt="回収拠点づくり③の写真"
                             class="product-logo mb-2" loading="lazy">
-                        <p class="mb-0">農作業と記録の効率化を支援（開発中）</p>
+                        <p class="mb-0"> XXXXXXX（回収拠点づくり③の実績の説明）</p>
                     </div>
                 </div>
 
@@ -428,8 +448,8 @@
             <ol class="breadcrumb" style="--bs-breadcrumb-divider:'＞'; font-size: clamp(.875rem, 1.8vw, 1rem);">
 
                 <li class="breadcrumb-item"><a href="{{ route('indexDev') }}">トップ</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('userServicesShow') }}">サービス</a></li>
-                <li class="breadcrumb-item">自社開発</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('userServicesShow') }}">プロジェクト概要</a></li>
+                <li class="breadcrumb-item">回収拠点づくり</a></li>
             </ol>
         </nav>
 

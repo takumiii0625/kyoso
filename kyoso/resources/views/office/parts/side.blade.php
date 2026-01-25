@@ -2,7 +2,7 @@
     <div class="app-brand pt-3">
         <a href="{{ route('officeNewsIndex') }}" class="app-brand-link">
             <span class="app-brand-logo">
-                <img src="/image/logo_OBFall.png" alt="ロゴ" height="20px">
+                <img src="/image/logo_kyoso.png" alt="ロゴ" height="20px">
             </span>
         </a>
 

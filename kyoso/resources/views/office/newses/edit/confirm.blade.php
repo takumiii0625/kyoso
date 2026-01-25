@@ -51,7 +51,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">
                                 お知らせ画像2
                             </label>
@@ -75,7 +75,7 @@
                                 なし
                                 @endif
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">

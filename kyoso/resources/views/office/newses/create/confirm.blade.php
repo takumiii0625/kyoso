@@ -49,7 +49,7 @@
                         </div>
                         @endif
 
-                        @if (isset($assign['confirm']['news_image_url_2']))
+                        <!-- @if (isset($assign['confirm']['news_image_url_2']))
                         <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">
                                 お知らせ画像2
@@ -69,7 +69,7 @@
                                 <img src="{{ asset($assign['confirm']['news_image_url_3']) }}" alt="お知らせ画像" width="200">
                             </div>
                         </div>
-                        @endif
+                        @endif -->
 
                         <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">

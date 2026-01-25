@@ -56,7 +56,7 @@
         h2 {
             font-size: clamp(18px, 2.6vw, 26px);
             font-weight: 700;
-            color: var(--blue)
+            color: #ffa2a8;
         }
 
         h3 {
@@ -111,11 +111,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -179,7 +179,7 @@
         <div class="devwrap d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
             <!-- PC:左 / SP:一番上（ロゴ＋ページトップへ） -->
             <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center order-1 order-md-1">
-                <img src="./image/logo_OBFall_white.png"
+                <img src="./image/logo_kyoso_white.png"
                     class="link logo" onclick="scrollToTop()" alt="OBFall株式会社ロゴ">
             </div>
 
@@ -189,9 +189,7 @@
                     〒105-0022<br>
                     東京都港区海岸1-2-3&nbsp;&nbsp;汐留芝離宮ビルディング 21F<br>
                     TEL:03-5403-5904<br>
-                    <a href="{{ url('/human-rights-policy') }}" target="_blank" class="human-rights-policy">
-                        人権に関する基本方針と社内相談窓口
-                    </a>
+
                 </p>
             </div>
 

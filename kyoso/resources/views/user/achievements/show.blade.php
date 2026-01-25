@@ -11,7 +11,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>Achievements | OBFall Inc.</title>
+    <title></title>
 
     <style>
         :root {
@@ -142,7 +142,7 @@
         .kicker {
             font-size: 12px;
             letter-spacing: .12em;
-            color: var(--blue);
+            color: #ffa2a8;
             font-weight: 700;
 
             font-family: serif;
@@ -162,7 +162,7 @@
 
 
         a.more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none;
             text-align: end;
         }
@@ -220,11 +220,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -235,8 +235,9 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>Achievements</h1>
-                <div class="sub"><br><br><br><br>ITの力で、人と社会の可能性を広げる。<br>OBFallの挑戦と成果。</div>
+                <h1>実績・事例紹介</h1>
+                <div class="sub"><br><br><br><br> 「油を集める」だけじゃない。<br>
+                    地域の“続く力”を生む、私たちの挑戦と成果。</div>
             </div>
         </div>
     </section>
@@ -244,44 +245,48 @@
         <section aria-label="overview">
             <br>
             <p>
-                私たちは、「テクノロジーで人生をより豊かにする」という理念のもと、
-                自社開発・受託開発・脆弱性診断・SESの4つの領域で、
-                社会や現場の課題を“仕組み”として解決してきました。<br>
-                ここで紹介するのは、私たちの手で形にしてきたプロジェクトたち。
-                どれも、「人」や「社会」に新しい選択肢を生み出すための挑戦です。
+                XXXXXXX（実績事例紹介についての説明）
             </p>
         </section>
 
         <section aria-label="service-cards" class="grid">
-            <!-- 自社開発 -->
+            <!-- 回収拠点づくり -->
             <article class="card">
-                <div class="kicker">Products</div>
-                <div><i class="bi bi-lightbulb-fill"></i>自社開発</div>
-                <h3 class="card-title">IT × Vision</h3>
-                <p>人と社会の可能性を広げる、自社プロダクト。<br>
-                    OBFallの想いを、サービスというかたちで届けます。</p>
+                <div class="kicker">Collection</div>
+                <!-- <div><i class="bi bi-lightbulb-fill"></i>回収拠点づくり</div> -->
+                <h3 class="card-title">回収拠点づくり</h3>
+                <p>地域の生活導線に回収拠点をつくり、参加のハードルを下げる。<br>
+                </p>
                 <a class="more" href="{{ route('achievementsProducts') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
             </article>
 
             <!-- 受託開発 -->
             <article class="card">
-                <div class="kicker">Contract Development</div>
-                <div><i class="bi bi-lightbulb-fill"></i>受託開発</div>
-                <h3 class="card-title">IT × Collaboration</h3>
-                <p>ともにつくり、ともに前へ。<br>
-                    クライアントの想いを汲み取り、共に課題を解決するパートナーとして伴走します。
+                <div class="kicker">Education</div>
+                <!-- <div><i class="bi bi-lightbulb-fill"></i>受託開発</div> -->
+                <h3 class="card-title">学校・学びの実装</h3>
+                <p>総合の学習や体験を通じて「循環者」を育てる。
                 </p>
                 <a class="more" href="{{ route('achievementsContract') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
             </article>
 
             <!-- 脆弱性診断 -->
             <article class="card">
-                <div class="kicker">Security Assessment</div>
-                <div><i class="bi bi-lightbulb-fill"></i>脆弱性診断</div>
-                <h3 class="card-title">Security × Engineering</h3>
-                <p>安全は、後付けではなく、設計から。<br>
-                    開発と診断をワンストップで行い、信頼できるプロダクトづくりを支えます。</p>
-                <a class="more" href="{{ route('achievementsSecurity') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
+                <div class="kicker">Decarbonization</div>
+                <!-- <div><i class="bi bi-lightbulb-fill"></i>脆弱性診断</div> -->
+                <h3 class="card-title">資源化・脱炭素</h3>
+                <p>回収した油を燃料・エネルギーへ。CO₂削減の“見える成果”へ。
+                    <a class="more" href="{{ route('achievementsSecurity') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
+            </article>
+
+            <!-- 受託開発 -->
+            <article class="card">
+                <div class="kicker">Partnership</div>
+                <!-- <div><i class="bi bi-lightbulb-fill"></i>受託開発</div> -->
+                <h3 class="card-title">共創ネットワーク</h3>
+                <p>自治体・企業・NPO・町内会と役割分担し、継続できる運用
+                </p>
+                <a class="more" href="{{ route('achievementsPartnership') }}">詳しく見る <i class="bi bi-arrow-right-circle-fill"></i></a>
             </article>
         </section>
 

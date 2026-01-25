@@ -49,7 +49,7 @@
         /* === 見出し系 === */
         h2 {
             font-size: 1.8rem;
-            color: #007acc;
+            color: #ffa2a8;
             margin-bottom: 8px;
         }
 
@@ -64,7 +64,7 @@
         h4 {
             font-size: 1.4rem;
             margin-top: 20px;
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         .achievement-lead {
@@ -89,7 +89,7 @@
         }
 
         strong {
-            color: #007acc;
+            color: #ffa2a8;
         }
 
         /* === 画像コンテナ === */
@@ -114,7 +114,7 @@
         /* === 各セクション区分 === */
         .section-products {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
 
@@ -122,7 +122,7 @@
 
         .section-contract {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
 
@@ -131,7 +131,7 @@
 
         .section-security {
             background: #ffffff;
-            border-left: 6px solid #66b3ff;
+            border-left: 6px solid #ffa2a8;
             padding-top: 40px;
             padding-bottom: 40px;
         }
@@ -234,7 +234,7 @@
         .kicker {
             font-size: 12px;
             letter-spacing: .12em;
-            color: var(--blue);
+            color: #ffa2a8;
             font-weight: 700;
 
             font-family: serif;
@@ -314,7 +314,7 @@
         }
 
         a.more {
-            color: var(--blue);
+            color: #ffa2a8;
             text-decoration: none;
             text-align: end;
         }
@@ -378,11 +378,11 @@
         <nav class="nav-02">
             <ul>
 
-                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">PHILOSOPHY</a></li>
-                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">SERVICE</a></li>
-                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">ACHIEVEMENTS</a></li>
-                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">ABOUT US</a></li>
-                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li class="link text-dark "><a href="{{ route('philosophy') }}" class="text-dark text-decoration-none">企業理念</a></li>
+                <li class="link text-dark "><a href="{{ route('userServicesShow') }}" class="text-dark text-decoration-none">プロジェクト概要</a></li>
+                <li class="link text-dark "><a href="{{ route('achievements') }}" class="text-dark text-decoration-none">実績・事例紹介</a></li>
+                <li class="link text-dark "><a href="{{ route('aboutus') }}" class="text-dark text-decoration-none">会社概要</a></li>
+                <li class="link text-dark "><a href="{{ route('contact') }}" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
 
             </ul>
         </nav>
@@ -393,18 +393,15 @@
     <section class="hero">
         <div class="wrap">
             <div class="title">
-                <h1>Contract Development</h1>
-                <div class="sub"><br><br><br><br>ともにつくり、ともに前へ。<br>クライアントの想いを汲み取り、共に課題を解決するパートナーとして。</div>
+                <h1>学校・学びの実装の実績</h1>
+                <div class="sub"><br><br><br><br>XXXXXXXXX（学校・学びの実装の実績の一言メッセージ）</div>
             </div>
         </div>
     </section>
     <main class="wrap">
         <section aria-label="overview">
             <p>
-                OBFallの受託開発は、「作る」ことを目的とせず、「価値を生み出す」ことを目的とする開発です。<br>
-                Webサービス、アプリケーション、業務システムなど多様な開発に対応しながら、
-                企画から設計・デザイン・実装・セキュリティ診断まで一貫した体制で提供しています。<br>
-                クライアントと同じ目線で課題を見つめ、長く続く価値を共に育てていきます。
+                XXXXXXX（学校・学びの実装の実績についての説明）
             </p>
         </section>
 
@@ -415,18 +412,17 @@
                 <div class="achievement-content">
                     <!-- image: CareerLogのメイン画面 -->
                     <div class="image-container">
-                        <img src="../image/careerlog_logo.png" alt="CareerLog画面" />
+                        <img src="../image/careerlog_logo.png" alt="学校・学びの実装の実績①の画像" />
                     </div>
                     <div class="text">
 
-                        <h4><strong>CareerLog（キャリアログ）</strong></h4>
+                        <h4><strong>XXXXXXXXX（学校・学びの実装の実績①のタイトル）</strong></h4>
                         <br>
                         <p>
-                            キャリアログは、社会人が業界・職種の経験者に1対1で相談できるOB/OG訪問サービス。<br>
-                            登録不要で今すぐOBを検索でき、実体験に基づくアドバイスで転職やキャリアの不安を解消し、自分だけの進路設計を後押しします。
+                            XXXXXXXXXXXXXXXX（学校・学びの実装の実績①の説明）
                         </p>
 
-                        <p><a href="https://career-log.com/" target="_blank" class="link-button">CareerLog公式サイト　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
+                        <p><a href="https://career-log.com/" target="_blank" class="link-button">※リンクなどあれば載せる<i class="bi bi-arrow-right-circle-fill"></i></a></p>
                     </div>
                 </div>
             </article>
@@ -437,18 +433,16 @@
             <article class="achievement-item">
                 <div class="achievement-content">
                     <div class="image-container">
-                        <img src="../image/NoaChoice_logo.jpg" alt="Store-Passアプリ画面" />
+                        <img src="../image/NoaChoice_logo.jpg" alt="学校・学びの実装の実績②の画像" />
                     </div>
                     <div class="text">
-                        <h4><strong>NoaChoice（ノアチョイス）</strong></h4>
+                        <h4><strong>XXXXXXXXX（学校・学びの実装の実績②のタイトル）</strong></h4>
                         <br>
                         <p>
-                            結婚式準備の“探す・比べる・決める”をオンラインで完結できるブライダルECサイトです。<br>
-                            レス・タキシード・和装・ジュエリー・ペーパーアイテム・引出物まで、厳選アイテムを適正価格でお届け。<br>
-                            サイズガイドと試着キット、パーソナルサポートで、初めての方でも安心してお選びいただけます。
+                            XXXXXXXXXXXXXXXX（学校・学びの実装の実績②の説明）
                         </p>
 
-                        <p><a href="https://noa-choice.com/" target="_blank" class="link-button">NoaChoice公式サイト　<i class="bi bi-arrow-right-circle-fill"></i></a></p>
+                        <p><a href="https://noa-choice.com/" target="_blank" class="link-button">※リンクなどあれば載せる<i class="bi bi-arrow-right-circle-fill"></i></a></p>
                     </div>
 
 
@@ -463,7 +457,7 @@
 
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('indexDev') }}">トップ</a></li>
                 <li class="breadcrumb-item"><a style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));" href="{{ route('achievements') }}">実績・事例紹介</a></li>
-                <li class="breadcrumb-item">受託開発</a></li>
+                <li class="breadcrumb-item">学校・学びの実装の実績</a></li>
             </ol>
         </nav>
 
