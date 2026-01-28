@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="株式会社共創は横浜市金沢区を拠点に、廃油回収・廃食油リサイクルを通じた地域循環型社会の実現を目指しています。家庭や飲食店から出る廃食油をバイオ燃料に変換し、CO₂削減と地域貢献を両立します。">
-    <meta name="keywords" content="廃油回収,廃食油回収,廃食油リサイクル,バイオ燃料,CO2削減,横浜市,金沢区,地域循環,SDGs,環境">
+    <meta name="description" content="地域循環油プロジェクト｜株式会社共創は横浜市金沢区を拠点に、地域循環油の仕組みで廃食油をバイオ燃料に変換。地域の子育て・福祉・防災を支援し、CO₂削減と地域貢献を両立します。">
+    <meta name="keywords" content="地域循環油,地域循環油プロジェクト,循環油,廃食油,バイオ燃料,CO2削減,横浜市,金沢区,SDGs,地域貢献">
     <meta property="og:title" content="株式会社共創 | 地域循環油プロジェクト">
-    <meta property="og:description" content="廃油回収・廃食油リサイクルで地域循環型社会を実現。横浜市金沢区で廃食油をバイオ燃料に変換し、CO₂削減と地域貢献を両立します。">
+    <meta property="og:description" content="地域循環油プロジェクトで廃食油をバイオ燃料に変換。横浜市金沢区で地域の子育て・福祉・防災を支援し、CO₂削減と地域貢献を両立。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
     <meta property="og:site_name" content="株式会社共創">
     <meta property="og:locale" content="ja_JP">
     <link rel="canonical" href="https://obfall.com/">
-    <title>株式会社共創 | 廃油回収・廃食油リサイクルで地域循環型社会を実現</title>
+    <title>地域循環油プロジェクト | 株式会社共創 - 横浜市金沢区</title>
     <link rel="icon" href="./image/favicon.png" type="image/png">
     <!-- 構造化データ（JSON-LD） -->
     <script type="application/ld+json">
@@ -24,7 +24,7 @@
         "name": "株式会社共創",
         "url": "https://obfall.com/",
         "logo": "https://obfall.com/image/logo_kyoso2.png",
-        "description": "廃油回収・廃食油リサイクルを通じた地域循環型社会の実現を目指す横浜市金沢区の企業",
+        "description": "地域循環油プロジェクトを推進する横浜市金沢区の企業。廃食油をバイオ燃料に変換し地域貢献",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "能見台6-25-10",

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="共創ネットワークの実績。横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働による廃油回収プロジェクトの推進事例をご紹介。">
-    <meta name="keywords" content="共創ネットワーク,実績,地域連携,はまみらいみんなフォーラム,横浜市,金沢区,NPO,企業連携">
-    <meta property="og:title" content="共創ネットワークの実績 | 株式会社共創">
-    <meta property="og:description" content="横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働事例をご紹介。">
+    <meta name="description" content="地域循環油プロジェクトの共創ネットワーク実績。横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働事例をご紹介。">
+    <meta name="keywords" content="地域循環油,共創ネットワーク,実績,地域連携,はまみらいみんなフォーラム,横浜市,金沢区,NPO,企業連携">
+    <meta property="og:title" content="共創ネットワークの実績 | 地域循環油プロジェクト">
+    <meta property="og:description" content="地域循環油プロジェクトの連携実績。「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働事例。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/achievements/partnership">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -21,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>共創ネットワークの実績 | 株式会社共創 - 地域連携・パートナーシップ</title>
+    <title>共創ネットワークの実績 | 地域循環油プロジェクト | 株式会社共創</title>
 
     <style>
         /* === 基本設定 === */

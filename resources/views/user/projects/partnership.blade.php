@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="自治体・企業・NPO・町内会との共創ネットワーク。廃油回収プロジェクトを横浜市金沢区と連携して推進。地域パートナーとの協働で継続できる循環の仕組みを構築。">
-    <meta name="keywords" content="共創ネットワーク,地域連携,廃油回収,横浜市金沢区,NPO,企業連携,官民連携,SDGs">
-    <meta property="og:title" content="共創ネットワーク | 株式会社共創">
-    <meta property="og:description" content="自治体・企業・NPO・町内会との共創ネットワーク。地域パートナーとの協働で継続できる循環の仕組みを構築。">
+    <meta name="description" content="地域循環油プロジェクトの共創ネットワーク。自治体・企業・NPO・町内会と連携し、横浜市金沢区で継続できる循環の仕組みを構築しています。">
+    <meta name="keywords" content="地域循環油,共創ネットワーク,地域連携,横浜市金沢区,NPO,企業連携,官民連携,SDGs">
+    <meta property="og:title" content="共創ネットワーク | 地域循環油プロジェクト">
+    <meta property="og:description" content="地域循環油プロジェクトの共創ネットワーク。自治体・企業・NPO・町内会と連携し継続できる循環の仕組みを構築。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/projects/partnership">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -23,7 +23,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <title>共創ネットワーク | 株式会社共創 - 地域連携・パートナーシップ</title>
+    <title>共創ネットワーク | 地域循環油プロジェクト | 株式会社共創</title>
     <style>
         :root {
             --ink: #101317;

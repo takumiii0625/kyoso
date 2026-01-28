@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="廃油回収拠点の実績紹介。横浜市金沢区のルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗での廃食油回収。回収した油はバイオディーゼル燃料に変換しCO₂削減に貢献。">
-    <meta name="keywords" content="廃油回収,回収拠点,実績,横浜市金沢区,ルンビニー,イエローハット,ウエノクリーニング,バイオディーゼル">
-    <meta property="og:title" content="回収拠点づくり・資源化の実績 | 株式会社共創">
-    <meta property="og:description" content="横浜市金沢区での廃油回収拠点の実績。回収した油はバイオディーゼル燃料に変換しCO₂削減に貢献。">
+    <meta name="description" content="地域循環油プロジェクトの回収拠点実績。横浜市金沢区のルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗で廃食油を回収し、バイオディーゼル燃料に変換。">
+    <meta name="keywords" content="地域循環油,回収拠点,実績,横浜市金沢区,ルンビニー,イエローハット,ウエノクリーニング,バイオディーゼル">
+    <meta property="og:title" content="回収拠点・資源化の実績 | 地域循環油プロジェクト">
+    <meta property="og:description" content="地域循環油プロジェクトの回収拠点実績。横浜市金沢区で廃食油をバイオディーゼル燃料に変換。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/achievements/collection">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -21,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>廃油回収拠点・資源化の実績 | 株式会社共創</title>
+    <title>回収拠点・資源化の実績 | 地域循環油プロジェクト | 株式会社共創</title>
 
     <style>
         /* === 基本設定 === */

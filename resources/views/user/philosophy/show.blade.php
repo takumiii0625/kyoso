@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="株式会社共創の企業理念。「消費者から循環者へ」をビジョンに、廃油回収・廃食油リサイクルで地域循環型社会を実現。子どもたちの未来と地域の力をつなぐ使命を掲げています。">
-    <meta name="keywords" content="企業理念,廃油回収,循環型社会,SDGs,地域貢献,横浜市金沢区,ミッション,ビジョン">
-    <meta property="og:title" content="企業理念 | 株式会社共創">
-    <meta property="og:description" content="「消費者から循環者へ」をビジョンに、廃油回収・廃食油リサイクルで地域循環型社会を実現。">
+    <meta name="description" content="株式会社共創の企業理念。「消費者から循環者へ」をビジョンに、地域循環油プロジェクトで地域循環型社会を実現。子どもたちの未来と地域の力をつなぎます。">
+    <meta name="keywords" content="地域循環油,企業理念,循環型社会,SDGs,地域貢献,横浜市金沢区,ミッション,ビジョン">
+    <meta property="og:title" content="企業理念 | 地域循環油プロジェクト | 株式会社共創">
+    <meta property="og:description" content="「消費者から循環者へ」をビジョンに、地域循環油プロジェクトで地域循環型社会を実現。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/philosophy">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -20,7 +20,7 @@
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <title>企業理念 | 株式会社共創 - 消費者から循環者へ</title>
+    <title>企業理念 | 地域循環油プロジェクト | 株式会社共創</title>
     <style>
         /* ====== Minimal Design Tokens ====== */
         :root {

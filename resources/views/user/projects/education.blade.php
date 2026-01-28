@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="学校での環境教育・廃油回収の出前授業。子どもたちが循環型社会を学び、廃食油回収を実践。CO₂削減効果を体感し「循環者」として成長する教育プログラム。">
-    <meta name="keywords" content="環境教育,出前授業,廃油回収,循環型社会,SDGs教育,小学校,総合学習,横浜市金沢区">
-    <meta property="og:title" content="学校・学びの実装 | 株式会社共創">
-    <meta property="og:description" content="学校での環境教育・廃油回収の出前授業。子どもたちが循環型社会を学び、「循環者」として成長する教育プログラム。">
+    <meta name="description" content="地域循環油プロジェクトの学校・学びの実装。出前授業で子どもたちが循環型社会を学び、廃食油回収を実践。CO₂削減効果を体感し「循環者」として成長。">
+    <meta name="keywords" content="地域循環油,環境教育,出前授業,循環型社会,SDGs教育,小学校,総合学習,横浜市金沢区">
+    <meta property="og:title" content="学校・学びの実装 | 地域循環油プロジェクト">
+    <meta property="og:description" content="地域循環油プロジェクトの学校教育。出前授業で子どもたちが「循環者」として成長する教育プログラム。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/projects/education">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -23,7 +23,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <title>学校・学びの実装 | 株式会社共創 - 環境教育・廃油回収の出前授業</title>
+    <title>学校・学びの実装 | 地域循環油プロジェクト | 株式会社共創</title>
     <style>
         :root {
             --ink: #101317;

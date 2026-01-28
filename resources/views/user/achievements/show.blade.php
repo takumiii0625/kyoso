@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="株式会社共創の実績・事例紹介。廃油回収拠点の整備、学校での環境教育、地域パートナーとの連携など、地域循環油プロジェクトの成果をご紹介します。">
-    <meta name="keywords" content="廃油回収,実績,事例,環境教育,地域連携,横浜市,金沢区,CO2削減,バイオ燃料">
-    <meta property="og:title" content="実績・事例紹介 | 株式会社共創">
-    <meta property="og:description" content="廃油回収拠点の整備、学校での環境教育、地域パートナーとの連携など、地域循環油プロジェクトの成果をご紹介します。">
+    <meta name="description" content="地域循環油プロジェクトの実績・事例紹介。回収拠点の整備、学校での環境教育、地域パートナーとの連携など、横浜市金沢区での活動成果をご紹介します。">
+    <meta name="keywords" content="地域循環油,実績,事例,環境教育,地域連携,横浜市,金沢区,CO2削減,バイオ燃料">
+    <meta property="og:title" content="実績・事例紹介 | 地域循環油プロジェクト | 株式会社共創">
+    <meta property="og:description" content="地域循環油プロジェクトの実績・事例。回収拠点の整備、学校教育、地域パートナー連携の成果をご紹介。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/achievements">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -21,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>実績・事例紹介 | 株式会社共創 - 廃油回収プロジェクトの成果</title>
+    <title>実績・事例紹介 | 地域循環油プロジェクト | 株式会社共創</title>
 
     <style>
         :root {

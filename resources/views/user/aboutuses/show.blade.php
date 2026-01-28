@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="株式会社共創の会社概要。2021年設立、横浜市金沢区を拠点に廃油回収・廃食油リサイクル事業を展開。代表・河原英信は国連本部でSDGs報告発表の経歴を持ちます。">
-    <meta name="keywords" content="会社概要,株式会社共創,廃油回収,横浜市金沢区,会社情報,代表取締役,河原英信">
-    <meta property="og:title" content="会社概要 | 株式会社共創">
-    <meta property="og:description" content="2021年設立、横浜市金沢区を拠点に廃油回収・廃食油リサイクル事業を展開する株式会社共創の会社情報。">
+    <meta name="description" content="株式会社共創の会社概要。2021年設立、横浜市金沢区を拠点に地域循環油プロジェクトを推進。代表・河原英信は国連本部でSDGs報告発表の経歴を持ちます。">
+    <meta name="keywords" content="地域循環油,会社概要,株式会社共創,横浜市金沢区,会社情報,代表取締役,河原英信">
+    <meta property="og:title" content="会社概要 | 地域循環油プロジェクト | 株式会社共創">
+    <meta property="og:description" content="2021年設立、横浜市金沢区を拠点に地域循環油プロジェクトを推進する株式会社共創の会社情報。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/aboutus">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
     <meta property="og:site_name" content="株式会社共創">
     <meta property="og:locale" content="ja_JP">
     <link rel="canonical" href="https://obfall.com/aboutus">
-    <title>会社概要 | 株式会社共創 - 廃油回収で地域循環型社会を実現</title>
+    <title>会社概要 | 地域循環油プロジェクト | 株式会社共創</title>
     <link rel="icon" href="../image/favicon.png" type="image/png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link

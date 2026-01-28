@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="廃油回収・廃食油回収の拠点づくりと資源化の仕組み。横浜市金沢区で家庭や飲食店から出る廃食油を回収し、バイオディーゼル燃料（BDF）に変換。1リットルあたり約2.3kgのCO₂削減効果。">
-    <meta name="keywords" content="廃油回収,廃食油回収,回収拠点,バイオディーゼル燃料,BDF,CO2削減,横浜市金沢区,リサイクル">
-    <meta property="og:title" content="回収拠点づくり・資源化 | 株式会社共創">
-    <meta property="og:description" content="廃油回収・廃食油回収の拠点づくりと資源化。横浜市金沢区で廃食油をバイオディーゼル燃料に変換し、CO₂削減を実現。">
+    <meta name="description" content="地域循環油プロジェクトの回収拠点づくりと資源化。横浜市金沢区で廃食油を回収し、バイオディーゼル燃料（BDF）に変換。1リットルあたり約2.3kgのCO₂削減効果。">
+    <meta name="keywords" content="地域循環油,回収拠点,廃食油回収,バイオディーゼル燃料,BDF,CO2削減,横浜市金沢区,資源化">
+    <meta property="og:title" content="回収拠点づくり・資源化 | 地域循環油プロジェクト">
+    <meta property="og:description" content="地域循環油プロジェクトの回収拠点づくりと資源化。横浜市金沢区で廃食油をバイオディーゼル燃料に変換。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obfall.com/projects/collection">
     <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
@@ -23,7 +23,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <title>廃油回収拠点づくり・資源化 | 株式会社共創 - 廃食油をバイオ燃料に</title>
+    <title>回収拠点づくり・資源化 | 地域循環油プロジェクト | 株式会社共創</title>
     <style>
         :root {
             --ink: #101317;
