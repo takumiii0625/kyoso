@@ -36,14 +36,14 @@ class ContactMail extends Mailable
     {
         // 送信者向け
         if ($this->template === 'mails.contact') {
-            return $this->from('kyousou1216@gmail.com', '株式会社共創')
+            return $this->from('info@chiiki-junkanyu.jp', '株式会社共創')
                 ->text($this->template)
                 ->subject($this->subject);
         }
         // 会社側向け
         elseif ($this->template === 'mails.contact_to_company') {
             $senderName = !empty($this->data['company']) ? $this->data['company'] : $this->data['name'];
-            return $this->from('kyousou1216@gmail.com', $senderName)
+            return $this->from('info@chiiki-junkanyu.jp', $senderName)
                 ->replyTo($this->data['email'], $senderName)
                 ->text($this->template)
                 ->subject($this->subject);
