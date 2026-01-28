@@ -274,8 +274,8 @@
                                                         <!-- タイトル & 日付 -->
 
                                                         <div class="flex-grow-1">
-                                                            <div class="fw-semibold text-truncate" title="{{ $record->title }}">
-                                                                {{ $record->title }}
+                                                            <div class="fw-semibold" title="{{ $record->title }}">
+                                                                {{ \Illuminate\Support\Str::limit($record->title, 15) }}
                                                             </div>
                                                             @if($record->created_at_fmt)
                                                             <time class="text-muted small">{{ $record->created_at_fmt }}</time>
