@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="学校での環境教育・廃油回収の実績。藤が丘小学校での取り組みでは317Lの廃食油を回収し、約0.73トンのCO₂削減を達成。出前授業やNPOとの連携で「循環者」を育成。">
+    <meta name="keywords" content="環境教育,実績,廃油回収,藤が丘小学校,出前授業,CO2削減,横浜市金沢区,NPO未来経験プロジェクト">
+    <meta property="og:title" content="学校・学びの実装の実績 | 株式会社共創">
+    <meta property="og:description" content="学校での環境教育・廃油回収の実績。藤が丘小学校で317Lの廃食油を回収し、約0.73トンのCO₂削減を達成。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obfall.com/achievements/education">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
+    <meta property="og:site_name" content="株式会社共創">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="canonical" href="https://obfall.com/achievements/education">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
@@ -11,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>学校・学びの実装の実績 | 株式会社共創</title>
+    <title>学校・環境教育の実績 | 株式会社共創 - 廃油回収で循環者を育成</title>
 
     <style>
         /* === 基本設定 === */

@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="共創ネットワークの実績。横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働による廃油回収プロジェクトの推進事例をご紹介。">
+    <meta name="keywords" content="共創ネットワーク,実績,地域連携,はまみらいみんなフォーラム,横浜市,金沢区,NPO,企業連携">
+    <meta property="og:title" content="共創ネットワークの実績 | 株式会社共創">
+    <meta property="og:description" content="横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働事例をご紹介。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obfall.com/achievements/partnership">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
+    <meta property="og:site_name" content="株式会社共創">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="canonical" href="https://obfall.com/achievements/partnership">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
@@ -11,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>共創ネットワークの実績 | 株式会社共創</title>
+    <title>共創ネットワークの実績 | 株式会社共創 - 地域連携・パートナーシップ</title>
 
     <style>
         /* === 基本設定 === */

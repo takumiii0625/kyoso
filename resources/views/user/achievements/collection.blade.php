@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="廃油回収拠点の実績紹介。横浜市金沢区のルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗での廃食油回収。回収した油はバイオディーゼル燃料に変換しCO₂削減に貢献。">
+    <meta name="keywords" content="廃油回収,回収拠点,実績,横浜市金沢区,ルンビニー,イエローハット,ウエノクリーニング,バイオディーゼル">
+    <meta property="og:title" content="回収拠点づくり・資源化の実績 | 株式会社共創">
+    <meta property="og:description" content="横浜市金沢区での廃油回収拠点の実績。回収した油はバイオディーゼル燃料に変換しCO₂削減に貢献。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obfall.com/achievements/collection">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
+    <meta property="og:site_name" content="株式会社共創">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="canonical" href="https://obfall.com/achievements/collection">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
@@ -11,7 +21,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>回収拠点づくり・資源化の実績 | 株式会社共創</title>
+    <title>廃油回収拠点・資源化の実績 | 株式会社共創</title>
 
     <style>
         /* === 基本設定 === */

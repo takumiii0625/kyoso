@@ -4,6 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="株式会社共創の地域循環油プロジェクト概要。廃油回収から資源化、学校教育、共創ネットワークまで、廃食油を活用した循環型社会の仕組みをご紹介します。">
+    <meta name="keywords" content="廃油回収,廃食油,プロジェクト,循環型社会,バイオ燃料,環境教育,横浜市,金沢区">
+    <meta property="og:title" content="プロジェクト概要 | 株式会社共創">
+    <meta property="og:description" content="廃油回収から資源化、学校教育、共創ネットワークまで、廃食油を活用した循環型社会の仕組みをご紹介します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obfall.com/projects">
+    <meta property="og:image" content="https://obfall.com/image/logo_kyoso2.png">
+    <meta property="og:site_name" content="株式会社共創">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="canonical" href="https://obfall.com/projects">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Bootstrap 5 CDN (例) -->
@@ -14,7 +24,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <title></title>
+    <title>プロジェクト概要 | 株式会社共創 - 廃油回収で地域循環型社会を実現</title>
     <style>
         :root {
             --ink: #1a1a1a;
