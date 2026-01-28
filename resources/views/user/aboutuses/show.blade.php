@@ -285,6 +285,31 @@
             font-size: 3px;
         }
 
+        main.py-5 {
+            padding: 1rem 0 !important;
+        }
+
+        .about {
+            padding: 0;
+        }
+
+        .about .wrap {
+            padding: 0 5px !important;
+            max-width: 100%;
+        }
+
+        .about ul {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .about li {
+            padding: 10px 5px !important;
+        }
+
+        .about .text-center {
+            padding: 0;
+        }
     }
 
     /* ボタンのホバー */
