@@ -246,7 +246,7 @@
                         </li>
                         <li>
                             <p class="about-head">資本金</p>
-                            <p class="about-data">1,000,000円</p>
+                            <p class="about-data">2,300,000円</p>
                         </li>
                         <li>
                             <p class="about-head">取引先銀行</p>
