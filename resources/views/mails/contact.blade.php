@@ -23,5 +23,5 @@
 
 何卒よろしくお願い申し上げます。
 
-OBFall株式会社
-https://obfall.com
+株式会社共創
+https://chiiki-junkanyu.jp

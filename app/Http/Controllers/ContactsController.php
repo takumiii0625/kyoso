@@ -43,11 +43,11 @@ class ContactsController extends Controller
             //$contact->save();
 
             // メール送信（送信者向け）
-            Mail::to($input['email'])->send(new ContactMail('mails.contact', '【OBFall株式会社】お問い合わせありがとうございます', $input));
+            Mail::to($input['email'])->send(new ContactMail('mails.contact', '【株式会社共創】お問い合わせありがとうございます', $input));
 
             // メール送信（会社側向け）
             $subjectForCompany = "【" . $input['company'] . "】新しいお問い合わせがありました";
-            Mail::to('h.katono@obfall.co.jp')->send(new ContactMail('mails.contact_to_company', $subjectForCompany, $input));
+            Mail::to('kyousou1216@gmail.com')->send(new ContactMail('mails.contact_to_company', $subjectForCompany, $input));
 
             return redirect()->route('complete');
         } else {
