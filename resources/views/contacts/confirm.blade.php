@@ -131,7 +131,6 @@
                 <div class="col-sm-8">
                     <p class="form-control-static">{{ $inputs['name'] }}</p>
                     <input type="hidden" name="name" value="{{ $inputs['name'] }}">
-
                 </div>
             </div>
 
@@ -152,7 +151,7 @@
             </div>
 
             <div class="form-group row">
-                <p class="col-sm-4 col-form-label">電話番号<span class="badge bg-secondary ms-1">任意</span></p>
+                <p class="col-sm-4 col-form-label">電話番号<span class="badge bg-danger ms-1">必須</span></p>
                 <div class="col-sm-8">
                     <p class="form-control-static">{{ $inputs['tel'] }}</p>
                     <input type="hidden" name="tel" value="{{ $inputs['tel'] }}">

@@ -21,8 +21,8 @@ class ContactsController extends Controller
         $request->validate([
             'name'     => 'required|max:10',
             'email'    => 'required|email',
-            'tel'      => 'nullable|numeric',
-            'company'   => 'nullable',
+            'tel'      => 'required|numeric',
+            'company'  => 'nullable',
             'contents' => 'required',
         ]);
         // フォームから受け取ったすべてのinputの値を取得
@@ -46,7 +46,8 @@ class ContactsController extends Controller
             Mail::to($input['email'])->send(new ContactMail('mails.contact', '【株式会社共創】お問い合わせありがとうございます', $input));
 
             // メール送信（会社側向け）
-            $subjectForCompany = "【" . $input['company'] . "】新しいお問い合わせがありました";
+            $senderName = !empty($input['company']) ? $input['company'] : $input['name'];
+            $subjectForCompany = "【" . $senderName . "】新しいお問い合わせがありました";
             Mail::to('kyousou1216@gmail.com')->send(new ContactMail('mails.contact_to_company', $subjectForCompany, $input));
 
             return redirect()->route('complete');

@@ -157,7 +157,7 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-4 col-form-label" for="tel">電話番号<span class="badge bg-secondary ms-1">任意</span></label>
+                <label class="col-sm-4 col-form-label" for="tel">電話番号<span class="badge bg-danger ms-1">必須</span></label>
                 <div class="col-sm-8">
                     <input type="tel" class="form-control" id="tel" name="tel" placeholder="例: 03-1234-5678" value="{{ old('tel') }}">
                 </div>
