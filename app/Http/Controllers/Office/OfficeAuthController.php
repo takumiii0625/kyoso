@@ -152,7 +152,7 @@ class OfficeAuthController extends Controller
             DB::table('admins')->where('id', $admin->id)->update(['remember_token' => $token]);
 
             // メール通知
-            Mail::to($admin->email)->send(new ForgotPwMail('【OBfall】パスワードの設定依頼受付のお知らせ', ['admin' => $admin, 'url' => $url]));
+            Mail::to($admin->email)->send(new ForgotPwMail('【株式会社共創】パスワードの設定依頼受付のお知らせ', ['admin' => $admin, 'url' => $url]));
 
             DB::commit();
         } catch (QueryException $e) {
@@ -254,7 +254,7 @@ class OfficeAuthController extends Controller
             ]);
 
             // メール通知
-            Mail::to(session('admin')->email)->send(new SetPwMail('【OBFall】パスワード変更完了のお知らせ', ['admin' => session('admin')]));
+            Mail::to(session('admin')->email)->send(new SetPwMail('【株式会社共創】パスワード変更完了のお知らせ', ['admin' => session('admin')]));
 
             DB::commit();
         } catch (QueryException $e) {

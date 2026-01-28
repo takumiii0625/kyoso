@@ -177,7 +177,7 @@
             <!-- PC:左 / SP:一番上（ロゴ＋ページトップへ） -->
             <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center order-1 order-md-1">
                 <img src="./image/logo.png"
-                    class="link logo" onclick="scrollToTop()" alt="OBFall株式会社ロゴ">
+                    class="link logo" onclick="scrollToTop()" alt="株式会社共創ロゴ">
             </div>
 
             <!-- PC:中央 / SP:一番下（住所など） -->
