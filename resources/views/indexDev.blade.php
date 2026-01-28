@@ -275,7 +275,8 @@
 
                                                         <div class="flex-grow-1">
                                                             <div class="fw-semibold" title="{{ $record->title }}">
-                                                                {{ \Illuminate\Support\Str::limit($record->title, 15) }}
+                                                                <span class="d-none d-md-inline">{{ $record->title }}</span>
+                                                                <span class="d-inline d-md-none">{{ \Illuminate\Support\Str::limit($record->title, 15) }}</span>
                                                             </div>
                                                             @if($record->created_at_fmt)
                                                             <time class="text-muted small">{{ $record->created_at_fmt }}</time>
