@@ -22,10 +22,8 @@ class ContactsController extends Controller
             'name'     => 'required|max:10',
             'email'    => 'required|email',
             'tel'      => 'nullable|numeric',
-            'company'   => 'required',
+            'company'   => 'nullable',
             'contents' => 'required',
-            'privacy_agree' => 'required',
-
         ]);
         // フォームから受け取ったすべてのinputの値を取得
         $inputs = $request->all();
