@@ -432,7 +432,22 @@
 
     @media (max-width: 767px) {
         .hero-text-overlay {
-            bottom: 10%;
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero-catchcopy .main-text {
+            font-size: 1.8rem;
+        }
+
+        .hero-catchcopy .sub-text {
+            font-size: 0.875rem;
         }
     }
 
