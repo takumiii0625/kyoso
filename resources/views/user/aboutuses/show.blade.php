@@ -224,14 +224,14 @@
                             <!-- 地図（レスポンシブ） -->
                             <div class="ratio ratio-16x9 rounded overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%B5%B7%E5%B2%B81-2-3%20%E6%B1%90%E6%9F%93%E8%8A%9D%E9%9B%A2%E5%AE%AE%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%2021F&hl=ja&z=16&output=embed"
+                                    src="https://www.google.com/maps?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%87%91%E6%B2%A2%E5%8C%BA%E8%83%BD%E8%A6%8B%E5%8F%B06-25-10&hl=ja&z=16&output=embed"
                                     loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
 
                             <!-- マップを別タブで開く／ルート検索 -->
                             <div class="mt-2">
                                 <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
-                                    href="https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%B5%B7%E5%B2%B81-2-3%20%E6%B1%90%E6%9F%93%E8%8A%9D%E9%9B%A2%E5%AE%AE%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%2021F">
+                                    href="https://www.google.com/maps/dir/?api=1&destination=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%87%91%E6%B2%A2%E5%8C%BA%E8%83%BD%E8%A6%8B%E5%8F%B06-25-10">
                                     ルートを検索
                                 </a>
                             </div>
