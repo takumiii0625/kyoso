@@ -221,7 +221,7 @@
 
         <nav aria-label="breadcrumb" class="wrap mt-4">
             <ol class="breadcrumb" style="--bs-breadcrumb-divider:'＞'; font-size: clamp(.875rem, 1.8vw, 1rem);">
-                <li class="breadcrumb-item"><a href="{{ route('indexDev') }}">トップ</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('index') }}">トップ</a></li>
                 <li class="breadcrumb-item active" aria-current="page">プライバシーポリシー</li>
             </ol>
         </nav>

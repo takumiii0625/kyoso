@@ -486,7 +486,8 @@ h1 span {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 
-    padding: .45rem 1rem .45rem calc(1rem + var(--nose));
+    text-align: left;
+    padding: .45rem calc(1rem + var(--nose)) .45rem 1rem;
 }
 
 /* 背景（左端を斜めカット） */
@@ -1285,8 +1286,8 @@ footer .devwrap>* {
         line-height: 1.2;
         font-size: 16px;
         font-family: 'Times New Roman', Times, serif;
-        padding: .45rem 1rem .45rem calc(1rem + var(--nose));
-        /* 左に余白 */
+        text-align: left;
+        padding: .45rem calc(1rem + var(--nose)) .45rem 1rem;
     }
 
     .heading-chip--flip::before {

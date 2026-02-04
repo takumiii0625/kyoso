@@ -7,7 +7,7 @@ use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Controllers\Office\OfficeAuthController;
 use App\Http\Controllers\Office\OfficeNewsesController;
 use App\Http\Controllers\User\UserServicesController;
-use App\Http\Controllers\Office\OfficeDevelopmentsController;
+
 use App\Http\Middleware\RedirectIfNotAuthenticated;
 use App\Http\Middleware\RedirectIfNoUser;
 use App\Http\Controllers\User\UserNewsesController;
@@ -25,10 +25,7 @@ use App\Http\Controllers\User\UserNewsesController;
 */
 
 
-// Route::get('/', [TopController::class, 'index'])->name('index');
-
-
-Route::get('/', [TopController::class, 'indexDev'])->name('indexDev');
+Route::get('/', [TopController::class, 'index'])->name('index');
 
 // お知らせ詳細
 Route::get('/newses/{id}', [UserNewsesController::class, 'show'])->name('userNewsShow')->setDefaults(['description' => 'お知らせ詳細']);

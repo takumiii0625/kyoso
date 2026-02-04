@@ -1,6 +1,6 @@
 <header class="fadein-first fadein-from-up">
     <div class="wrap">
-        <a href="{{ route('indexDev') }}" class="text-dark text-decoration-none ">
+        <a href="{{ route('index') }}" class="text-dark text-decoration-none ">
             <div class="logo-container">
                 <img src="../image/logo.png" class="link" onclick="scrollToTop()" alt="株式会社共創ロゴ" />
                 <div class="title" onclick="scrollToTop()">株式会社共創</div>
