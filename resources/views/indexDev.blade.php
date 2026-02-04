@@ -18,24 +18,24 @@
     <link rel="icon" href="./image/favicon.png" type="image/png">
     <!-- 構造化データ（JSON-LD） -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "株式会社共創",
-        "url": "https://obfall.com/",
-        "logo": "https://obfall.com/image/logo_kyoso2.png",
-        "description": "地域循環油プロジェクトを推進する横浜市金沢区の企業。廃食油をバイオ燃料に変換し地域貢献",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "能見台6-25-10",
-            "addressLocality": "横浜市金沢区",
-            "addressRegion": "神奈川県",
-            "postalCode": "236-0058",
-            "addressCountry": "JP"
-        },
-        "foundingDate": "2021-12-16",
-        "sameAs": []
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "株式会社共創",
+            "url": "https://obfall.com/",
+            "logo": "https://obfall.com/image/logo_kyoso2.png",
+            "description": "地域循環油プロジェクトを推進する横浜市金沢区の企業。廃食油をバイオ燃料に変換し地域貢献",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "能見台6-25-10",
+                "addressLocality": "横浜市金沢区",
+                "addressRegion": "神奈川県",
+                "postalCode": "236-0058",
+                "addressCountry": "JP"
+            },
+            "foundingDate": "2021-12-16",
+            "sameAs": []
+        }
     </script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -64,8 +64,6 @@
             <div class="main-visual">
                 <div class="img-wrap">
                     <img src="image/藤が丘小学校児童と.png" alt="藤が丘小学校での活動">
-                    <img src="image/授業風景.jpg" alt="出前授業の様子">
-                    <img src="image/はまみらいみんなフォーラム.png" alt="はまみらいフォーラム">
                 </div>
             </div>
             <div class="text-container hero-text-overlay">

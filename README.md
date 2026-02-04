@@ -72,7 +72,7 @@ php artisan view:clear
 ./vendor/bin/sail npm install
 ./vendor/bin/sail npm run dev -- --host 0.0.0.0
 
-# lolipop
+# lolipopアクセス
 ssh -p 2222 stripper.jp-chiiki-junkanyu@ssh.lolipop.jp
 
 PW:L0cOXU3RLSkv2BiJFbCtbnUPtlKDlYO3

@@ -5,12 +5,15 @@ $(function () {
     var scroll = 0;
 
     /*  メインビジュアルの切り替え */
-    $('.img-wrap img:nth-child(n+2)').hide();
-    setInterval(function () {
-        $(".img-wrap img:first-child").fadeOut(2000);
-        $(".img-wrap img:nth-child(2)").fadeIn(2000);
-        $(".img-wrap img:first-child").appendTo(".img-wrap");
-    }, 4000);
+    var $slides = $('.img-wrap img');
+    if ($slides.length > 1) {
+        $slides.filter(':nth-child(n+2)').hide();
+        setInterval(function () {
+            $(".img-wrap img:first-child").fadeOut(2000);
+            $(".img-wrap img:nth-child(2)").fadeIn(2000);
+            $(".img-wrap img:first-child").appendTo(".img-wrap");
+        }, 4000);
+    }
 
     /* フェードイン */
     /* メインビジュアル */

@@ -31,27 +31,36 @@
 
             position: relative;
             background-image: var(--hero-img);
-            background-size: cover;
-            /* 画面いっぱいにフィット */
+            background-size: contain;
             background-position: center;
-            /* 中央寄せ */
             background-repeat: no-repeat;
-            min-height: 36vh;
-            /* お好みで高さ調整 */
+            background-color: transparent;
+            min-height: 28vh;
+            padding: 2rem 0;
             color: #111;
-            /* テキスト色 */
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 50% 80% at 15% 50%, rgba(255, 170, 210, .88), transparent),
+                radial-gradient(ellipse 40% 70% at 50% 50%, rgba(255, 238, 150, .92), transparent),
+                radial-gradient(ellipse 50% 80% at 85% 50%, rgba(255, 190, 220, .70), transparent),
+                linear-gradient(135deg, rgba(255, 225, 240, .5), rgba(255, 246, 205, .5));
         }
 
         .human-rights-policy {
             color: #eef6ff
         }
 
-        /* 暗いフィルター */
+        /* グラデーションフィルター */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
             pointer-events: none;
         }
 
@@ -85,12 +94,9 @@
                 position: relative;
                 background-image: var(--hero-img);
                 background-size: cover;
-                /* 画面いっぱいにフィット */
                 background-position: center;
-                /* 中央寄せ */
                 background-repeat: no-repeat;
-                min-height: 46vh;
-                /* お好みで高さ調整 */
+                min-height: 30vh;
                 color: #111;
                 /* テキスト色 */
             }
@@ -183,6 +189,7 @@
     </div>
     <!-- ===== Hero ===== -->
     <section class="hero">
+        <div class="hero-bg"></div>
         <div class="wrap">
             <div class="title">
                 <h1>会社概要</h1>
@@ -198,7 +205,6 @@
             <div class="wrap">
 
                 <div class="text-center">
-                    <h2 class="h4 mb-3 text-container">会社情報</h2>
                     <ul class="p-0">
                         <li>
                             <p class="about-head">会社名</p>
@@ -206,10 +212,7 @@
                         </li>
                         <li>
                             <p class="about-head">代表取締役</p>
-                            <div class="d-flex align-items-center justify-content-center gap-3 mb-2">
-                                <img src="../image/代表.jpg" alt="代表取締役 河原英信" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
-                                <p class="about-data mb-0">河原　英信</p>
-                            </div>
+                            <p class="about-data">河原　英信</p>
                         </li>
                         <li>
                             <p class="about-head">所在地</p>

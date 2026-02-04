@@ -187,27 +187,36 @@
         }
 
         .hero {
-            --hero-img: url('../image/chou.jpg');
+            --hero-img: url('../image/はまみらいみんなフォーラム.png');
 
             position: relative;
             background-image: var(--hero-img);
-            background-size: cover;
-            /* 画面いっぱいにフィット */
+            background-size: contain;
             background-position: center;
-            /* 中央寄せ */
             background-repeat: no-repeat;
-            min-height: 36vh;
-            /* お好みで高さ調整 */
+            background-color: transparent;
+            min-height: 28vh;
+            padding: 2rem 0;
             color: #111;
-            /* テキスト色 */
         }
 
-        /* 暗いフィルター */
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 50% 80% at 15% 50%, rgba(255, 170, 210, .88), transparent),
+                radial-gradient(ellipse 40% 70% at 50% 50%, rgba(255, 238, 150, .92), transparent),
+                radial-gradient(ellipse 50% 80% at 85% 50%, rgba(255, 190, 220, .70), transparent),
+                linear-gradient(135deg, rgba(255, 225, 240, .5), rgba(255, 246, 205, .5));
+        }
+
+        /* グラデーションフィルター */
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
             pointer-events: none;
         }
 
@@ -433,6 +442,7 @@
 
     <!-- ===== Hero ===== -->
     <section class="hero">
+        <div class="hero-bg"></div>
         <div class="wrap">
             <div class="title">
                 <h1>学校・学びの実装の実績</h1>
