@@ -76,3 +76,23 @@ php artisan view:clear
 ssh -p 2222 stripper.jp-chiiki-junkanyu@ssh.lolipop.jp
 
 PW:L0cOXU3RLSkv2BiJFbCtbnUPtlKDlYO3
+
+
+# lolipopサーバーに直接アクセス
+コマンド：ssh -p 2222 stripper.jp-chiiki-junkanyu@ssh.lolipop.jp
+PW：L0cOXU3RLSkv2BiJFbCtbnUPtlKDlYO3
+
+  ロリポップサーバー
+  │                                                                                              
+  ├── /homepage/                ← ホームページ（本体）      
+  │     │
+  │     └── $ git pull origin main
+  │
+  └── /laravel/haiyuga/         ← 金沢区LP
+        │
+        └── $ git pull origin main
+
+# lolipopのサイトにアクセス
+  URL：https://user.lolipop.jp/?mode=login
+  独自ドメイン：chiiki-junkanyu.jp
+  パスワード：kyousou5530
