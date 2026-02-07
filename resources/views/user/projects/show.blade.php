@@ -290,25 +290,54 @@
     <main class="wrap">
         <section aria-label="overview">
             <p><br>
-                子ども食堂や地域食堂で調理された後の食用油を回収し、バイオエネルギーに変えて、循環する社会につなげます。<br><br>
+                地域の家庭や飲食店から出る廃食油を「ごみ」ではなく「資源」として回収し、燃料などに再生。<br>
+                その価値を子ども・福祉・防災・環境活動へ寄付として地域に還元する仕組みです。<br><br>
 
-                子どもたちや地域の方たちと交流しながら、循環型エネルギーを発展させていくプロジェクトです。<br>
-                今まで携わってくださった子どもたちは、真剣に社会と向き合い、このプロジェクトを通してまっすぐに成長しています。<br><br>
-
-                廃食油回収を学校、家庭、事業者様等にご協力いただき、集まった廃食油をポイントに還元して学校に寄付。<br>
-                これを原資に、生徒たちが地域課題を考え解決していくプロジェクトです。<br><br>
-
-                この取り組みを通し、まずは私たち大人が「循環者」になり、次世代を「循環者」に育てていきたいと考えています。
+                小学校の総合学習と連動し、子どもたちが回収や広報に関わることで、環境教育と地域貢献を同時に実現。<br>
+                台所から始まる小さな循環が、地域の支え合いと脱炭素を生み出す“見える循環モデル”です。<br><br>
             </p>
 
             <div class="mt-4 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffc107;">
-                <h4 style="color: #333; margin-bottom: 10px;">協力団体</h4>
+                <h4 style="color: #333; margin-bottom: 10px;">協力・連携団体一覧</h4>
+                <div style="color: #666; margin: 0; padding-left: 0;">
+                    <p style="margin: 12px 0 6px; font-weight: 700; color: #444;">運営・事業推進</p>
+                    <ul style="margin: 0 0 12px; padding-left: 20px;">
+                    <li>株式会社共創（運営主体）</li>
+                    <li>丸紅エネルギー（精製設備・仕組み連携）</li>
+                    <li>信愛エナジー（事業連携）</li>
+                    </ul>
+
+                    <p style="margin: 12px 0 6px; font-weight: 700; color: #444;">行政・地域組織</p>
+                    <ul style="margin: 0; padding-left: 20px;">
+                    <li>横浜市 共創推進課</li>
+                    <li>金沢区自助連絡協議会（自助カナ）</li>
+                    </ul>
+                </div>
+                <p class="mt-2 mb-0" style="font-size: 0.9rem; color: #888;">
+                    ※新規協力・連携団体を募集しています。お気軽にお問い合わせください。
+                </p>
+            </div>
+
+            <div class="mt-3 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <h4 style="color: #333; margin-bottom: 10px;">寄付先</h4>
                 <ul style="color: #666; margin: 0; padding-left: 20px;">
-                    <li>藤が丘小学校</li>
-                    <li>NPO未来経験プロジェクト</li>
-                    <li>ビーバーリンク食廃油活用プロジェクト</li>
+                    <li>横浜こどもホスピスプロジェクト うみとそらのおうち</li>
+                    <li>金沢区ママ</li>
+                    <li>I LOVE YOKOHAMA</li>
+                    <li>金沢区自助連絡協議会（自助カナ）</li>
                 </ul>
-                <p class="mt-2 mb-0" style="font-size: 0.9rem; color: #888;">※新規協力団体を募集しています。お気軽にお問い合わせください。</p>
+            </div>
+
+            <div class="mt-3 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <h4 style="color: #333; margin-bottom: 10px;">学校（総合学習・回収連携の実績）</h4>
+                <ul style="color: #666; margin: 0; padding-left: 20px;">
+                    <li>横浜市立藤が丘小学校</li>
+                    <li>横浜市立六浦小学校</li>
+                    <li>横浜市立下和泉小学校</li>
+                    <li>横浜市立鶴見小学校</li>
+                    <li>横浜市立鶴ヶ峰小学校</li>
+                    <li>横浜市立屛風ヶ浦小学校</li>
+                </ul>
             </div>
         </section>
 

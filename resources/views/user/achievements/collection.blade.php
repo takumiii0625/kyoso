@@ -475,10 +475,20 @@
             </p>
             <div class="mt-4 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffa2a8;">
                 <h5 style="color: #333;"><i class="fa-solid fa-recycle" style="color: #ffa2a8;"></i> 回収した油のゆくえ</h5>
-                <p style="color: #666; margin-bottom: 0;">
-                    回収した廃食油は、ビーバーリンク食廃油活用プロジェクトを通じてバイオディーゼル燃料（BDF）に精製されます。<br>
-                    廃食油1リットルあたり約2.3kgのCO₂削減効果があり、藤が丘小学校では317L回収で約0.73トンのCO₂削減を達成しました。
-                </p>
+                <div class="mt-2">
+                    <a
+                    href="https://marubeni.box.com/s/9rf89xdjwlcdi58zbadxgtwm5jg9tohf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-warning"
+                    style="border-color:#ffa2a8;color:#ffa2a8;"
+                    >
+                    動画で見る
+                    </a>
+                    <p class="mt-2 mb-0" style="font-size: 0.9rem; color: #888;">
+                    ※外部サイト（Box）が開きます
+                    </p>
+                </div>
             </div>
         </section>
 
