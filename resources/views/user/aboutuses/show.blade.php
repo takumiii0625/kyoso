@@ -253,7 +253,7 @@
                         </li>
                         <li>
                             <p class="about-head">取引先銀行</p>
-                            <p class="about-data">横浜銀行</p>
+                            <p class="about-data">湘南信用金庫</p>
                         </li>
                         <li>
                             <p class="about-head">商標登録</p>
