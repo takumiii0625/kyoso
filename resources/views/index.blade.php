@@ -198,8 +198,9 @@
 
                                 <p class="mb-4">
                                     2021年設立、横浜市金沢区を拠点に活動。<br>
-                                    代表・河原英信は国連本部でSDGs報告発表の経歴を持ち、<br>
-                                    「国連Energy Compact」で2030年までのCO₂削減目標を掲げています。
+                                    代表・河原英信は前職で、国連本部エナジーコンパクトで2030年までの目標を採択され<br>
+                                    年間Ｃo2削減10,682ｔ 廃食油回収約4,000,000リットル／年を目標に掲げ<br>
+                                    取り組んで参ります。
                                 </p>
                                 <a href="{{ route('aboutus') }}" class="link-button shadow" target="_blank" rel="noopener noreferrer">
                                     会社概要画面へ <i class="fa-solid fa-circle-arrow-right ms-1"></i>
