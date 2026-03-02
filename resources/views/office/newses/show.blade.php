@@ -64,7 +64,7 @@
                     お知らせ画像1
                 </label>
                 <div class="col-md-8 form-text d-flex align-items-center pt-0 pb-2 py-md-2 fs-6">
-                    <img src="{{ asset($assign['record']->news_image_url_1) }}" alt="お知らせ画像" width="200">
+                    <img src="{{ asset(!empty($assign['record']->news_image_url_1) ? $assign['record']->news_image_url_1 : 'images/logo.png') }}" alt="お知らせ画像" width="200"/>
                 </div>
             </div>
 

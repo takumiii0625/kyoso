@@ -53,7 +53,6 @@ class EditRequest extends FormRequest
 
             'content' => [
                 'bail',
-                'required',
                 'max:1000',
             ],
 
