@@ -54,7 +54,7 @@
                                 $raw = $item->news_image_url_1 ?? null;
                                 $thumb = $raw
                                 ? (\Illuminate\Support\Str::startsWith($raw, ['http://','https://','/']) ? $raw : asset($raw))
-                                : asset('image/noimg-square.jpg');
+                                : asset('image/logo.png');
                                 $date = $item->created_at_fmt ?? '';
                                 @endphp
 
@@ -62,9 +62,19 @@
                                     class="list-group-item list-group-item-action d-flex align-items-center gap-3 text-decoration-none text-dark">
 
                                     {{-- サムネ --}}
+                                    @php
+                                        // $thumb が空/未設定ならロゴにフォールバック
+                                        $thumbSrc = filled($thumb) ? $thumb : asset('image/logo.png');
+
+                                        // ロゴ（=フォールバック）の時だけ contain
+                                        $fit = filled($thumb) ? 'cover' : 'contain';
+                                    @endphp
+
                                     <div class="ratio ratio-1x1 flex-shrink-0" style="width:80px;">
-                                        <img src="{{ $thumb }}" alt="{{ $item->title }}"
-                                            class="w-100 h-100 rounded shadow-sm" style="object-fit:cover;" loading="lazy">
+                                        <img src="{{ $thumbSrc }}" alt="{{ $item->title }}"
+                                            class="w-100 h-100 rounded shadow-sm"
+                                            style="object-fit:{{ $fit }}; background:#fff;"
+                                            loading="lazy">
                                     </div>
 
                                     {{-- タイトル＋日付 --}}

@@ -257,7 +257,7 @@
 
                                                 $imgSrc = $raw
                                                 ? (\Illuminate\Support\Str::startsWith($raw, ['http://','https://','/']) ? $raw : asset($raw))
-                                                : asset('image/noimg-square.jpg');
+                                                : asset('image/logo.png');
                                                 @endphp
 
                                                 <div class="border-bottom news-item {{ $index >= $visibleCount ? 'd-none' : '' }}">
@@ -266,8 +266,15 @@
 
                                                         <!-- サムネ（正方形トリミング） -->
                                                         <div class="ratio ratio-1x1 flex-shrink-0 me-3" style="width:72px;">
+                                                            @php
+                                                                $isLogo = empty($raw);   // 画像が無い＝ロゴ表示
+                                                                $fit = $isLogo ? 'contain' : 'cover';
+                                                            @endphp
+
                                                             <img src="{{ $imgSrc }}" alt="{{ $record->title }}"
-                                                                class="w-100 h-100 rounded shadow-sm" style="object-fit:cover;" loading="lazy">
+                                                                class="w-100 h-100 rounded shadow-sm"
+                                                                style="object-fit:{{ $fit }}; background:#fff;"
+                                                                loading="lazy">
                                                         </div>
 
                                                         <!-- タイトル & 日付 -->
