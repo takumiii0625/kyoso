@@ -217,6 +217,35 @@
                     </div>
                 </section>
             </ul>
+            <h1 class="fadein-scroll fadein-from-left m-0 text-start">
+                <div class="heading-chip">ADVISOR</div>
+            </h1>
+            <ul>
+                <section class="py-1 py-md-5">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            {{-- 左：画像（トリミングなし） --}}
+                            <div class="col-md-6">
+                                <img src="{{ asset('image/ikeda.jpg') }}"
+                                alt="教育アドバイザー 池田 孝"
+                                class="img-fluid rounded shadow-sm d-block section-img ms-auto">
+                            </div>
+
+                            {{-- 右：テキスト --}}
+                            <div class="col-md-6">
+                                <div class="text-muted small mb-1">教育アドバイザー</div>
+                                <h2 class="h4 maintitle text-container mb-3">池田 孝 氏</h2>
+
+                                @php
+                                $bio = "元横浜市小学校副校長、元横浜市教育委員会指導主事（キャリア教育、総合的な学習の時間を担当）、\n現在、町田市立小学校時間講師、株式会社SolarCrewコミュニティマネージャー、一般社団法人横浜すぱいす理事をしつつ、\n「いけもんキッチン」にてキッチンカー✖教育で47都道府県子どもたちの「やってみたい」実現プロジェクトを実践中。";
+                                @endphp
+
+                                <p class="mb-0">{!! nl2br(e($bio)) !!}</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
             <h1 class="fadein-scroll fadein-from-right m-0 text-end">
                 <div class="heading-chip--flip">NEWS</div>
             </h1>
