@@ -32,14 +32,12 @@
 
 
     </div>
-    <section class="hero">
-        <div class="wrap">
-            <div class="title">
-                <h1 class="">News</h1>
-                <div class="sub"><br><br><br><br><span class="sub-text">最新情報</span></div>
-            </div>
-
+    <section class="hero hero--plain">
+    <div class="wrap">
+        <div class="title">
+        <h1>News</h1>
         </div>
+    </div>
     </section>
     <main class="py-5">
         <div class="container">
@@ -320,5 +318,34 @@
 
     .card:hover {
         box-shadow: 0 8px 24px rgba(255, 162, 168, 0.15);
+    }
+
+    .hero.hero--plain{
+    background: linear-gradient(180deg, #fff2f5 0%, #ffe9ee 45%, #fff6f8 100%);
+    color:#111;
+    height:auto; /* or 28vh でもOK */
+    }
+    .hero.hero--plain::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 30% 20%, rgba(255,162,168,.22), transparent 55%),
+        radial-gradient(circle at 80% 35%, rgba(255,220,120,.20), transparent 60%),
+        radial-gradient(circle at 60% 90%, rgba(30,144,255,.10), transparent 55%);
+    pointer-events:none;
+    }
+    .hero.hero--plain .wrap{
+    position:relative;
+    z-index:1;
+    padding: 48px 16px 18px;
+    }
+    .hero.hero--plain .title h1{
+    color:#111;
+    text-shadow:none;
+    }
+    @media (max-width: 767.98px){
+    .hero.hero--plain{ height:auto; }
+    .hero.hero--plain .wrap{ padding: 22px 10px 12px; }
     }
 </style>
