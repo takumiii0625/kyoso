@@ -261,6 +261,17 @@
                                 <img src="{{ asset('image/商標.png') }}" alt="地域循環油プロジェクト商標" class="img-fluid" style="max-width: 200px;">
                             </p>
                         </li>
+                        <li>
+                            <p class="about-head">参画団体</p>
+                            <p class="about-data">
+                                全国バイオディーゼル燃料利用推進協議会 会員
+                                <a href="{{ asset('pdf/bdf_kaiinmeibo20260130.pdf') }}" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline-secondary btn-sm ms-2">
+                                    <i class="bi bi-file-earmark-pdf"></i> 会員名簿を見る
+                                </a><br>
+                                一般社団法人ロングライフラボ 賛助会員
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
