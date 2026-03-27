@@ -78,9 +78,17 @@
                             </figure>
                             @endif
 
-                            {{-- 本文（改行維持） --}}
+                            {{-- 本文（改行維持・URL自動リンク化） --}}
+                            @php
+                                $contentText = e($assign['record']->content);
+                                $contentLinked = preg_replace(
+                                    '/(https?:\/\/[^\s<>"]+)/u',
+                                    '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>',
+                                    $contentText
+                                );
+                            @endphp
                             <div class="fs-6 lh-lg" style="white-space: pre-line;">
-                                {{ $assign['record']->content }}
+                                {!! $contentLinked !!}
                             </div>
 
                             <!-- お知らせ一覧に戻るボタン -->
