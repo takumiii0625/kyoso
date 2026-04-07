@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="地域循環油プロジェクトの学校・学びの実装。出前授業で子どもたちが循環型社会を学び、廃食油回収を実践。CO₂削減効果を体感し「循環者」として成長。">
     <meta name="keywords" content="地域循環油,環境教育,出前授業,循環型社会,SDGs教育,小学校,総合学習,横浜市金沢区">
@@ -394,6 +403,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">

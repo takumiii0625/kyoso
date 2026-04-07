@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="地域循環油プロジェクトの学校教育実績。藤が丘小学校での取り組みでは317Lの廃食油を回収し、約0.73トンのCO₂削減を達成。出前授業やNPOとの連携で「循環者」を育成。">
     <meta name="keywords" content="地域循環油,環境教育,実績,藤が丘小学校,出前授業,CO2削減,横浜市金沢区,NPO未来経験プロジェクト">
@@ -424,6 +433,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">

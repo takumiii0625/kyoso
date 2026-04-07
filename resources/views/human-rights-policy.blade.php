@@ -3,6 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>人権方針・社内相談窓口 | OBFall株式会社</title>
   <meta name="description" content="当社の人権に関する基本方針と、ハラスメント等の人権侵害に関する相談・通報窓口のご案内です。" />
@@ -196,6 +204,12 @@
 </head>
 
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header role="banner">
     <div class="container">
       <h1>人権に関する基本方針と社内相談窓口</h1>

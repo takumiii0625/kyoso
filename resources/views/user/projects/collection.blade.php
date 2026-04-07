@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="地域循環油プロジェクトの回収拠点づくりと資源化。横浜市金沢区で廃食油を回収し、バイオディーゼル燃料（BDF）に変換。1リットルあたり約2.3kgのCO₂削減効果。">
     <meta name="keywords" content="地域循環油,回収拠点,廃食油回収,バイオディーゼル燃料,BDF,CO2削減,横浜市金沢区,資源化">
@@ -377,6 +386,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">

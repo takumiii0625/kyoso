@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="地域循環油プロジェクト｜株式会社共創は横浜市金沢区を拠点に、地域循環油の仕組みで廃食油をバイオ燃料に変換。地域の子育て・福祉・防災を支援し、CO₂削減と地域貢献を両立します。">
     <meta name="keywords" content="地域循環油,地域循環油プロジェクト,循環油,廃食油,バイオ燃料,CO2削減,横浜市,金沢区,SDGs,地域貢献">
@@ -47,6 +56,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">

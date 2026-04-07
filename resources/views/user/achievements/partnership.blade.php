@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="地域循環油プロジェクトの共創ネットワーク実績。横浜市主催「はまみらいみんなフォーラム」での発表、地域企業・NPO・団体との協働事例をご紹介。">
     <meta name="keywords" content="地域循環油,共創ネットワーク,実績,地域連携,はまみらいみんなフォーラム,横浜市,金沢区,NPO,企業連携">
@@ -419,6 +428,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">

@@ -3,6 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5X5MJ2PF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="地域循環油プロジェクトの概要。回収拠点づくり、学校教育、共創ネットワークの3つの柱で、廃食油を地域の資源に変える仕組みをご紹介します。">
     <meta name="keywords" content="地域循環油,地域循環油プロジェクト,循環油,プロジェクト概要,バイオ燃料,環境教育,横浜市,金沢区">
@@ -261,6 +270,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X5MJ2PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top">
         <x-header />
         <nav class="nav-02">
