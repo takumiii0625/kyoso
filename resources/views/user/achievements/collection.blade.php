@@ -13,8 +13,8 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="地域循環油プロジェクトの回収拠点実績。横浜市金沢区のルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗で廃食油を回収し、バイオディーゼル燃料に変換。">
-    <meta name="keywords" content="地域循環油,回収拠点,実績,横浜市金沢区,ルンビニー,イエローハット,ウエノクリーニング,バイオディーゼル">
+    <meta name="description" content="地域循環油プロジェクトの回収拠点実績。横浜市金沢区のルンビニー、イエローハット金沢文庫店、ウエノクリーニング各店舗、金沢臨海サービスで廃食油を回収し、バイオディーゼル燃料に変換。">
+    <meta name="keywords" content="地域循環油,回収拠点,実績,横浜市金沢区,ルンビニー,イエローハット,ウエノクリーニング,金沢臨海サービス,バイオディーゼル">
     <meta property="og:title" content="回収拠点・資源化の実績 | 地域循環油プロジェクト">
     <meta property="og:description" content="地域循環油プロジェクトの回収拠点実績。横浜市金沢区で廃食油をバイオディーゼル燃料に変換。">
     <meta property="og:type" content="website">
@@ -568,6 +568,26 @@
                             回収ボックスを設置。クリーニングの受け取り・お預けのついでに油をお持ちいただけます。<br><br>
                             <strong>【応援先】</strong>金沢区自助連絡協議会<br>
                             誰もが安全で健康で笑って暮らせる金沢区を実現するために、人と人の輪をつなげる地域交流ネットワークです。
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- 金沢臨海サービス -->
+            <article class="achievement-item">
+                <div class="achievement-content">
+                    <div class="image-container">
+                        <img src="../image/回収④.jpg" alt="株式会社金沢臨海サービスの敷地内に設置された廃食油回収ボックス" />
+                    </div>
+                    <div class="text">
+                        <h4><strong>株式会社金沢臨海サービス</strong></h4>
+                        <br>
+                        <p>
+                            金沢区柴町391-7。地域貢献の一環として、<br>
+                            会社敷地内に廃食油の回収ボックスを設置してくださいました。<br><br>
+                            <a class="more" href="https://krsv.jp/" target="_blank" rel="noopener noreferrer">株式会社金沢臨海サービス 公式サイト ›</a>
                         </p>
                     </div>
                 </div>
