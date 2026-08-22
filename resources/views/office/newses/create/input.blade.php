@@ -47,6 +47,21 @@
                         </div>
 
                         <div class="row">
+                            <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold" for="created_at" role="button">
+                                <span class="text-danger">※&nbsp;</span> 登録日
+                            </label>
+                            <div class="col-md-8 form-text d-flex align-items-center pt-0 pb-2 py-md-2 fs-6">
+                                <input type="date" name="created_at" value="{{ old('created_at', now()->format('Y-m-d')) }}" id="created_at" class="form-control">
+                            </div>
+                            @error ('created_at')
+                            <div class="col-md-3"></div>
+                            <div class="col-md-8">
+                                <div class="alert alert-danger mt-0 p-1 form-text" role="alert">{{ $message }}</div>
+                            </div>
+                            @enderror
+                        </div>
+
+                        <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold" for="news_image_url_1" role="button">
                                 お知らせ画像1
                             </label>

@@ -160,6 +160,9 @@ Route::middleware([RedirectIfNotAuthenticated::class . ':office', RedirectIfNoUs
 
     // お知らせ削除（処理）
     Route::post('/newses/{id}/delete', [OfficeNewsesController::class, 'deleteExecute'])->name('officeNewsDeleteExecute')->setDefaults(['description' => 'お知らせ削除']);
+
+    // お知らせ並べ替え（反映）
+    Route::post('/newses/sort', [OfficeNewsesController::class, 'sortUpdate'])->name('officeNewsSortUpdate')->setDefaults(['description' => 'お知らせ並べ替え']);
 });
 
 // 管理者ログアウト

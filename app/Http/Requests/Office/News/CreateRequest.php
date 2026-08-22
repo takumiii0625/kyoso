@@ -36,6 +36,12 @@ class CreateRequest extends FormRequest
                 'max:100',
             ],
 
+            'created_at' => [
+                'bail',
+                'required',
+                'date',
+            ],
+
             'news_image_url_1' => [
                 'bail',
                 'nullable',

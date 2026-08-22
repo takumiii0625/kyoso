@@ -38,6 +38,15 @@
                             </div>
                         </div>
 
+                        <div class="row">
+                            <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">
+                                登録日
+                            </label>
+                            <div class="col-md-8 form-text d-flex align-items-center pt-0 pb-2 py-md-2 fs-6">
+                                {{ $assign['confirm']['created_at'] }}
+                            </div>
+                        </div>
+
                         @if (isset($assign['confirm']['news_image_url_1']))
                         <div class="row">
                             <label class="col-md-3 col-form-label d-flex align-items-center pt-2 pb-0 py-md-2 fs-6 fw-bold">

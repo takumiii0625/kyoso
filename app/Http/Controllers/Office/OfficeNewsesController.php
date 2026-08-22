@@ -40,10 +40,13 @@ class OfficeNewsesController extends Controller
             ->selectRaw('title')
             ->selectRaw('content')
             ->selectRaw('status')
+            ->selectRaw('sort_no')
             ->selectRaw('DATE_FORMAT(created_at, "%Y年%m月%d日") as created_at_fmt')
             ->selectRaw('DATE_FORMAT(updated_at, "%Y年%m月%d日") as updated_at_fmt')
             ->selectRaw('deleted_at')
-            ->whereNull('deleted_at')->orderBy('id', 'desc');
+            ->whereNull('deleted_at')
+            // sort_noが設定されている場合は昇順優先、未設定（NULL）のものは従来通りID降順（登録順）で末尾に表示
+            ->orderByRaw('sort_no IS NULL, sort_no ASC, id DESC');
 
 
         // タイトルのLIKE検索
@@ -439,6 +442,47 @@ class OfficeNewsesController extends Controller
 
         $assign['id'] = $id;
         return view('office/newses/edit/complete', compact('assign'));
+    }
+
+    /**
+     * お知らせ並べ替え（反映）
+     * 一覧画面で入力された表示順（sort_no）を一括で反映する。
+     *
+     * @param  Request                           $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function sortUpdate(Request $request)
+    {
+        $request->session()->regenerateToken();
+
+        // sort_no[id] => 値 の連想配列
+        $sortNos = $request->input('sort_no', []);
+
+        try {
+            DB::beginTransaction();
+
+            foreach ($sortNos as $id => $value) {
+                DB::table('newses')
+                    ->where('id', $id)
+                    ->whereNull('deleted_at')
+                    ->update(['sort_no' => $value === '' || $value === null ? null : (int) $value]);
+            }
+
+            DB::commit();
+        } catch (QueryException $e) {
+            DB::rollBack();
+            $params = implode(', ', $e->getBindings());
+            Log::error('ERROR' . __METHOD__ . '#' . __LINE__ . "\nSQL: {$e->getSql()}\nParams: {$params}\n{$e}\n\n");
+
+            return redirect()->route('officeNewsIndex', session('officeNewsIndexSearchParams'))->with('error', '並べ替えの反映に失敗しました。時間をおいて再度お試しください。');
+        } catch (\Throwable $e) {
+            DB::rollBack();
+            Log::error('ERROR' . __METHOD__ . '#' . __LINE__ . " >>> {$e}\n\n");
+
+            return redirect()->route('officeNewsIndex', session('officeNewsIndexSearchParams'))->with('error', '予期せぬエラーが発生しました。時間をおいて再度お試しください。');
+        }
+
+        return redirect()->route('officeNewsIndex', session('officeNewsIndexSearchParams'))->with('success', '並べ替えを反映しました。');
     }
 
     /**

@@ -25,7 +25,18 @@
                     <h5 class="card-title">お知らせ一覧</h5>
                 </div>
                 <div class="col-6 pt-2 text-end">
+                    <button type="submit" form="newsSortForm" class="btn btn-outline-primary me-2">並べ替えを反映</button>
                     <a href="{{ route('officeNewsCreateInput') }}" class="btn btn-primary">登録</a>
+                </div>
+            </div>
+
+            {{-- 並べ替え反映用フォーム（各行の並び順入力は form="newsSortForm" 属性でこのフォームに紐付ける） --}}
+            <form id="newsSortForm" method="POST" action="{{ App\Libraries\Utils::urlToPath(route('officeNewsSortUpdate')) }}">
+                @csrf
+            </form>
+            <div class="row">
+                <div class="col-12">
+                    <small class="text-muted">「並び順」に数字を入力し「並べ替えを反映」を押すと、数字の小さい順に一覧・公開サイトへ反映されます。空欄のものは登録日の新しい順で末尾に表示されます（現在表示中のページの行のみ反映されます）。</small>
                 </div>
             </div>
 
@@ -116,6 +127,7 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr class="bg-black">
+                                    <th scope="col" class="text-white fw-bold py-2">並び順</th>
                                     <th scope="col" class="text-white fw-bold py-2">ID</th>
                                     <th scope="col" class="text-white fw-bold py-2">タイトル</th>
                                     <th scope="col" class="text-white fw-bold py-2">内容</th>
@@ -127,6 +139,9 @@
                             <tbody>
                                 @forelse ($assign['records'] as $index => $record)
                                 <tr class="{{ $record->status == 0 ? 'bg-lighter' : '' }}">
+                                    <td class="py-2">
+                                        <input type="number" name="sort_no[{{ $record->id }}]" value="{{ $record->sort_no }}" form="newsSortForm" class="form-control" style="width: 80px;" min="0">
+                                    </td>
                                     <td class="py-2">
                                         {{ number_format($record->id) }}
                                     </td>
@@ -159,7 +174,7 @@
                                 </tr>
                                 @empty
                                 <tr>
-                                    <td colspan="6">
+                                    <td colspan="7">
                                         データがありません。
                                     </td>
                                 </tr>
