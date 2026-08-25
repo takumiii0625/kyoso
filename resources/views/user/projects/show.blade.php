@@ -334,6 +334,14 @@
             </div>
 
             <div class="mt-3 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffc107;">
+                <h4 style="color: #333; margin-bottom: 10px;">親善大使</h4>
+                <div class="d-flex align-items-center flex-wrap" style="gap: 16px;">
+                    <img src="{{ asset('image/takumi.jpg') }}" alt="親善大使 鮨屋のまさる弟子のたくみ" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;">
+                    <p style="margin: 0; font-weight: 700; color: #444;">鮨屋のまさる弟子のたくみ</p>
+                </div>
+            </div>
+
+            <div class="mt-3 p-3" style="background: #fff8e1; border-radius: 10px; border-left: 4px solid #ffc107;">
                 <h4 style="color: #333; margin-bottom: 10px;">寄付先</h4>
                 <ul style="color: #666; margin: 0; padding-left: 20px;">
                     <li>横浜こどもホスピスプロジェクト うみとそらのおうち</li>
